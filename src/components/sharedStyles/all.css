@@ -1,0 +1,58 @@
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+.nav-bar__title {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 2.5rem;
+  color: #f67715;
+  margin: 2rem 2rem 1rem 2rem;
+}
+.nav-bar__menu {
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+  height: 3.5rem;
+}
+.nav-bar__menu__home {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1.3rem;
+  color: #494949;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.nav-bar__menu__home:hover {
+  color: #f67715;
+  font-size: 1.35rem;
+}
+.nav-bar__menu__catalog {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1.3rem;
+  color: #494949;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.nav-bar__menu__catalog:hover {
+  color: #f67715;
+  font-size: 1.35rem;
+}
+.nav-bar__menu__about-us {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1.3rem;
+  color: #494949;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.nav-bar__menu__about-us:hover {
+  color: #f67715;
+  font-size: 1.35rem;
+}
+
+/*# sourceMappingURL=all.css.map */
