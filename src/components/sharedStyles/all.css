@@ -1,19 +1,16 @@
 .nav-bar {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   border-bottom: 1px solid #ccc;
+  gap: 25%;
 }
-.nav-bar__title {
-  font-weight: 500;
-  font-style: italic;
-  font-size: 2.5rem;
-  color: #f67715;
-  margin: 1.5rem 2rem 0.5rem 2rem;
+.nav-bar__logo {
+  cursor: pointer;
 }
 .nav-bar__menu {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
   gap: 10rem;
   height: 3.5rem;
@@ -54,6 +51,10 @@
   color: #f67715;
   font-size: 1.35rem;
 }
+.nav-bar img {
+  width: 15rem;
+  height: 3rem;
+}
 
 .landing-page {
   display: flex;
@@ -61,7 +62,17 @@
   background-color: #f3f5f7;
   width: 100vw;
   height: 100vh;
-  gap: 12rem;
+  min-width: 10rem;
+  gap: 5rem;
+}
+
+.landing-page {
+  display: flex;
+  justify-content: center;
+  background-color: #f3f5f7;
+  width: 100vw;
+  height: 100vh;
+  gap: 5rem;
 }
 .landing-page__second-section {
   display: flex;
@@ -70,7 +81,7 @@
   min-width: 20rem;
   margin-top: 2rem;
   padding-top: 2rem;
-  box-shadow: 0 0.5rem 2rem rgb(255, 210, 172);
+  box-shadow: 0 0.5rem 2rem rgba(4, 3, 3, 0.1019607843);
   width: 15%;
   height: 50%;
   transition: 0.3s;
@@ -107,6 +118,7 @@
 }
 .landing-page__second-section:hover {
   margin-top: 2.5rem;
+  box-shadow: 0 0.5rem 2rem rgb(255, 210, 172);
 }
 .landing-page__second-section img {
   width: 18rem;
@@ -121,7 +133,7 @@
   margin-top: 8rem;
   padding-top: 2rem;
   min-width: 20rem;
-  box-shadow: 0 0.5rem 2rem rgb(255, 210, 172);
+  box-shadow: 0 0.5rem 2rem rgba(4, 3, 3, 0.1019607843);
   width: 15%;
   height: 50%;
   transition: 0.3s;
@@ -152,6 +164,7 @@
 }
 .landing-page__first-section:hover {
   margin-top: 7.5rem;
+  box-shadow: 0 0.5rem 2rem rgb(255, 210, 172);
 }
 .landing-page__first-section img {
   width: 18rem;
@@ -165,7 +178,7 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0 0.5rem 2rem rgb(255, 210, 172);
+  box-shadow: 0 0.5rem 2rem rgba(4, 3, 3, 0.1019607843);
   min-width: 20rem;
   width: 15%;
   height: 50%;
@@ -203,6 +216,7 @@
 }
 .landing-page__third-section:hover {
   margin-top: 9.5rem;
+  box-shadow: 0 0.5rem 2rem rgb(255, 210, 172);
 }
 .landing-page__third-section img {
   width: 18rem;
@@ -217,7 +231,7 @@
   margin-top: 3rem;
   padding-top: 2rem;
   min-width: 20rem;
-  box-shadow: 0 0.5rem 2rem rgb(255, 210, 172);
+  box-shadow: 0 0.5rem 2rem rgba(4, 3, 3, 0.1019607843);
   width: 15%;
   height: 50%;
   transition: 0.3s;
@@ -248,6 +262,7 @@
 }
 .landing-page__fourth-section:hover {
   margin-top: 4rem;
+  box-shadow: 0 0.5rem 2rem rgb(255, 210, 172);
 }
 .landing-page__fourth-section img {
   width: 18rem;
