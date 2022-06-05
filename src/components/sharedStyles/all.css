@@ -58,14 +58,106 @@
 
 .landing-page {
   display: flex;
-  justify-content: center;
   background-color: #f3f5f7;
   width: 100vw;
   height: 100vh;
   min-width: 10rem;
   gap: 5rem;
 }
+.landing-page__left-section {
+  width: 33%;
+  padding: 2rem 0 0 2rem;
+}
+.landing-page__left-section__description__quote {
+  font-size: 6rem;
+  margin: 4rem 0 2rem 3rem;
+}
+.landing-page__left-section__description__content {
+  font-size: 2rem;
+  color: #494949;
+  margin: 0 0 2rem 3rem;
+}
+.landing-page__left-section__cake-images {
+  display: flex;
+  gap: 3rem;
+  padding: 2rem 0 0 10rem;
+}
+.landing-page__left-section__cake-images img {
+  border-radius: 3rem;
+  width: 6rem;
+  height: 6rem;
+}
+.landing-page__middle-section {
+  padding-top: 3rem;
+}
+.landing-page__middle-section img {
+  border-radius: 10rem;
+  width: 26rem;
+  height: 45rem;
+}
+.landing-page__right-section {
+  padding: 5rem 0 0 2rem;
+  width: 35%;
+}
+.landing-page__right-section__features__feature-1 {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+.landing-page__right-section__features__feature-2 {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+.landing-page__right-section__features__feature-3 {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+.landing-page__right-section__explore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  height: 15rem;
+}
+.landing-page__right-section__explore__explore-button {
+  width: 12rem;
+  height: 4rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  background-color: #f67715;
+  color: white;
+  box-shadow: 5px 5px 10px #f67715;
+  transition: 0.3s;
+}
+.landing-page__right-section__explore__explore-button:hover {
+  width: 12.5rem;
+  height: 4.5rem;
+  font-size: 1.9rem;
+}
 
+mark.orange {
+  background-color: transparent;
+  color: #f67715;
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #dc8e52;
+    box-shadow: 0 0 3px #f67715;
+  }
+  50% {
+    background-color: #ea8538;
+    box-shadow: 0 0 10px #f67715;
+  }
+  100% {
+    background-color: #f67715;
+    box-shadow: 0 0 3px #f67715;
+  }
+}
 .catalog-page {
   display: flex;
   justify-content: center;
