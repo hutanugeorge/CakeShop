@@ -66,7 +66,7 @@
   gap: 5rem;
 }
 
-.landing-page {
+.catalog-page {
   display: flex;
   justify-content: center;
   background-color: #f3f5f7;
@@ -74,7 +74,7 @@
   height: 100vh;
   gap: 5rem;
 }
-.landing-page__second-section {
+.catalog-page__second-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,7 +88,7 @@
   animation-duration: 1s;
   animation-name: slide_in-first;
 }
-.landing-page__second-section__see-more-button {
+.catalog-page__second-section__see-more-button {
   background-color: #f67715;
   border: 0.5px solid transparent;
   color: white;
@@ -100,32 +100,32 @@
   transition: 0.3s;
   border-radius: 5px;
 }
-.landing-page__second-section__see-more-button:hover {
+.catalog-page__second-section__see-more-button:hover {
   width: 7.5rem;
   height: 2.5rem;
   font-size: 1.1rem;
 }
-.landing-page__second-section__category {
+.catalog-page__second-section__category {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.landing-page__second-section__category__name {
+.catalog-page__second-section__category__name {
   margin: 0;
   color: #5c4a4a;
   font-size: 1.8rem;
 }
-.landing-page__second-section:hover {
+.catalog-page__second-section:hover {
   margin-top: 2.5rem;
   box-shadow: 0 0.5rem 2rem rgb(255, 210, 172);
 }
-.landing-page__second-section img {
+.catalog-page__second-section img {
   width: 18rem;
   height: 22rem;
   border-radius: 0.5rem;
 }
-.landing-page__first-section {
+.catalog-page__first-section {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -140,7 +140,7 @@
   animation-duration: 1s;
   animation-name: slide_in-second;
 }
-.landing-page__first-section__see-more-button {
+.catalog-page__first-section__see-more-button {
   background-color: #f67715;
   border: 0.5px solid transparent;
   color: white;
@@ -152,26 +152,26 @@
   transition: 0.3s;
   border-radius: 5px;
 }
-.landing-page__first-section__see-more-button:hover {
+.catalog-page__first-section__see-more-button:hover {
   width: 7.5rem;
   height: 2.5rem;
   font-size: 1.1rem;
 }
-.landing-page__first-section__category__name {
+.catalog-page__first-section__category__name {
   margin: 0;
   color: #5c4a4a;
   font-size: 1.8rem;
 }
-.landing-page__first-section:hover {
+.catalog-page__first-section:hover {
   margin-top: 7.5rem;
   box-shadow: 0 0.5rem 2rem rgb(255, 210, 172);
 }
-.landing-page__first-section img {
+.catalog-page__first-section img {
   width: 18rem;
   height: 22rem;
   border-radius: 0.5rem;
 }
-.landing-page__third-section {
+.catalog-page__third-section {
   margin-top: 10rem;
   padding-top: 2rem;
   display: flex;
@@ -186,18 +186,18 @@
   animation-duration: 1s;
   animation-name: slide_in-third;
 }
-.landing-page__third-section__category {
+.catalog-page__third-section__category {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.landing-page__third-section__category__name {
+.catalog-page__third-section__category__name {
   margin: 0;
   color: #5c4a4a;
   font-size: 1.8rem;
 }
-.landing-page__third-section__see-more-button {
+.catalog-page__third-section__see-more-button {
   background-color: #f67715;
   border: 0.5px solid transparent;
   color: white;
@@ -209,21 +209,21 @@
   transition: 0.3s;
   border-radius: 5px;
 }
-.landing-page__third-section__see-more-button:hover {
+.catalog-page__third-section__see-more-button:hover {
   width: 7.5rem;
   height: 2.5rem;
   font-size: 1.1rem;
 }
-.landing-page__third-section:hover {
+.catalog-page__third-section:hover {
   margin-top: 9.5rem;
   box-shadow: 0 0.5rem 2rem rgb(255, 210, 172);
 }
-.landing-page__third-section img {
+.catalog-page__third-section img {
   width: 18rem;
   height: 22rem;
   border-radius: 0.5rem;
 }
-.landing-page__fourth-section {
+.catalog-page__fourth-section {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -238,7 +238,7 @@
   animation-duration: 1s;
   animation-name: slide_in-fourth;
 }
-.landing-page__fourth-section__see-more-button {
+.catalog-page__fourth-section__see-more-button {
   background-color: #f67715;
   border: 0.5px solid transparent;
   color: white;
@@ -250,21 +250,21 @@
   transition: 0.3s;
   border-radius: 5px;
 }
-.landing-page__fourth-section__see-more-button:hover {
+.catalog-page__fourth-section__see-more-button:hover {
   width: 7.5rem;
   height: 2.5rem;
   font-size: 1.1rem;
 }
-.landing-page__fourth-section__category__name {
+.catalog-page__fourth-section__category__name {
   margin: 0;
   color: #5c4a4a;
   font-size: 1.8rem;
 }
-.landing-page__fourth-section:hover {
+.catalog-page__fourth-section:hover {
   margin-top: 4rem;
   box-shadow: 0 0.5rem 2rem rgb(255, 210, 172);
 }
-.landing-page__fourth-section img {
+.catalog-page__fourth-section img {
   width: 18rem;
   height: 22rem;
   border-radius: 0.5rem;
