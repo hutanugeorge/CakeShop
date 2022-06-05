@@ -63,21 +63,21 @@
   height: 100vh;
   gap: 12rem;
 }
-.landing-page__main-section {
+.landing-page__second-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   min-width: 20rem;
   margin-top: 2rem;
   padding-top: 2rem;
-  box-shadow: 0 0.5rem 2rem rgba(4, 3, 3, 0.1019607843);
+  box-shadow: 0 0.5rem 2rem rgb(255, 210, 172);
   width: 15%;
   height: 50%;
   transition: 0.3s;
   animation-duration: 1s;
-  animation-name: slide_in-center;
+  animation-name: slide_in-first;
 }
-.landing-page__main-section__see-more-button {
+.landing-page__second-section__see-more-button {
   background-color: #f67715;
   border: 0.5px solid transparent;
   color: white;
@@ -89,31 +89,31 @@
   transition: 0.3s;
   border-radius: 5px;
 }
-.landing-page__main-section__see-more-button:hover {
+.landing-page__second-section__see-more-button:hover {
   width: 7.5rem;
   height: 2.5rem;
   font-size: 1.1rem;
 }
-.landing-page__main-section__category {
+.landing-page__second-section__category {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.landing-page__main-section__category__name {
+.landing-page__second-section__category__name {
   margin: 0;
   color: #5c4a4a;
   font-size: 1.8rem;
 }
-.landing-page__main-section:hover {
+.landing-page__second-section:hover {
   margin-top: 2.5rem;
 }
-.landing-page__main-section img {
+.landing-page__second-section img {
   width: 18rem;
   height: 22rem;
   border-radius: 0.5rem;
 }
-.landing-page__left-section {
+.landing-page__first-section {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -121,14 +121,14 @@
   margin-top: 8rem;
   padding-top: 2rem;
   min-width: 20rem;
-  box-shadow: 0 0.5rem 2rem rgba(4, 3, 3, 0.1019607843);
+  box-shadow: 0 0.5rem 2rem rgb(255, 210, 172);
   width: 15%;
   height: 50%;
   transition: 0.3s;
   animation-duration: 1s;
-  animation-name: slide_in-left;
+  animation-name: slide_in-second;
 }
-.landing-page__left-section__see-more-button {
+.landing-page__first-section__see-more-button {
   background-color: #f67715;
   border: 0.5px solid transparent;
   color: white;
@@ -140,49 +140,51 @@
   transition: 0.3s;
   border-radius: 5px;
 }
-.landing-page__left-section__see-more-button:hover {
+.landing-page__first-section__see-more-button:hover {
   width: 7.5rem;
   height: 2.5rem;
   font-size: 1.1rem;
 }
-.landing-page__left-section__category__name {
+.landing-page__first-section__category__name {
   margin: 0;
+  color: #5c4a4a;
+  font-size: 1.8rem;
 }
-.landing-page__left-section:hover {
+.landing-page__first-section:hover {
   margin-top: 7.5rem;
 }
-.landing-page__left-section img {
+.landing-page__first-section img {
   width: 18rem;
   height: 22rem;
   border-radius: 0.5rem;
 }
-.landing-page__right-section {
+.landing-page__third-section {
   margin-top: 10rem;
   padding-top: 2rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0 0.5rem 2rem rgba(4, 3, 3, 0.1019607843);
+  box-shadow: 0 0.5rem 2rem rgb(255, 210, 172);
   min-width: 20rem;
   width: 15%;
   height: 50%;
   transition: 0.3s;
   animation-duration: 1s;
-  animation-name: slide_in-right;
+  animation-name: slide_in-third;
 }
-.landing-page__right-section__category {
+.landing-page__third-section__category {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.landing-page__right-section__category__name {
+.landing-page__third-section__category__name {
   margin: 0;
   color: #5c4a4a;
   font-size: 1.8rem;
 }
-.landing-page__right-section__see-more-button {
+.landing-page__third-section__see-more-button {
   background-color: #f67715;
   border: 0.5px solid transparent;
   color: white;
@@ -194,21 +196,66 @@
   transition: 0.3s;
   border-radius: 5px;
 }
-.landing-page__right-section__see-more-button:hover {
+.landing-page__third-section__see-more-button:hover {
   width: 7.5rem;
   height: 2.5rem;
   font-size: 1.1rem;
 }
-.landing-page__right-section:hover {
+.landing-page__third-section:hover {
   margin-top: 9.5rem;
 }
-.landing-page__right-section img {
+.landing-page__third-section img {
+  width: 18rem;
+  height: 22rem;
+  border-radius: 0.5rem;
+}
+.landing-page__fourth-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  min-width: 20rem;
+  box-shadow: 0 0.5rem 2rem rgb(255, 210, 172);
+  width: 15%;
+  height: 50%;
+  transition: 0.3s;
+  animation-duration: 1s;
+  animation-name: slide_in-fourth;
+}
+.landing-page__fourth-section__see-more-button {
+  background-color: #f67715;
+  border: 0.5px solid transparent;
+  color: white;
+  width: 7rem;
+  height: 2rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+.landing-page__fourth-section__see-more-button:hover {
+  width: 7.5rem;
+  height: 2.5rem;
+  font-size: 1.1rem;
+}
+.landing-page__fourth-section__category__name {
+  margin: 0;
+  color: #5c4a4a;
+  font-size: 1.8rem;
+}
+.landing-page__fourth-section:hover {
+  margin-top: 4rem;
+}
+.landing-page__fourth-section img {
   width: 18rem;
   height: 22rem;
   border-radius: 0.5rem;
 }
 
-@keyframes slide_in-center {
+@keyframes slide_in-first {
   from {
     margin-top: 10rem;
   }
@@ -216,7 +263,7 @@
     margin-top: 2rem;
   }
 }
-@keyframes slide_in-left {
+@keyframes slide_in-second {
   from {
     margin-top: 15rem;
   }
@@ -224,12 +271,20 @@
     margin-top: 8rem;
   }
 }
-@keyframes slide_in-right {
+@keyframes slide_in-third {
   from {
     margin-top: 20rem;
   }
   to {
     margin-top: 10rem;
+  }
+}
+@keyframes slide_in-fourth {
+  from {
+    margin-top: 11rem;
+  }
+  to {
+    margin-top: 3rem;
   }
 }
 
