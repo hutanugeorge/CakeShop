@@ -160,14 +160,20 @@ mark.orange {
   }
 }
 .catalog-page {
-  display: flex;
-  justify-content: center;
   background-color: #f3f5f7;
-  width: 100vw;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+}
+.catalog-page__categories {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   gap: 3rem;
+  flex-wrap: wrap;
 }
-.catalog-page__cakes {
+.catalog-page__categories__cakes {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -181,26 +187,26 @@ mark.orange {
   animation-duration: 1s;
   cursor: pointer;
 }
-.catalog-page__cakes__category {
+.catalog-page__categories__cakes__category {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.catalog-page__cakes__category__name {
+.catalog-page__categories__cakes__category__name {
   margin: 0;
   color: #5c4a4a;
   font-size: 1.8rem;
 }
-.catalog-page__cakes:hover {
+.catalog-page__categories__cakes:hover {
   box-shadow: 0 0.5rem 2rem rgb(255, 210, 172);
 }
-.catalog-page__cakes img {
+.catalog-page__categories__cakes img {
   width: 18rem;
   height: 22rem;
   border-radius: 0.5rem;
 }
-.catalog-page__cookies {
+.catalog-page__categories__cookies {
   padding-top: 2rem;
   display: flex;
   justify-content: flex-start;
@@ -215,26 +221,26 @@ mark.orange {
   animation-duration: 1s;
   cursor: pointer;
 }
-.catalog-page__cookies__category {
+.catalog-page__categories__cookies__category {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.catalog-page__cookies__category__name {
+.catalog-page__categories__cookies__category__name {
   margin: 0;
   color: #5c4a4a;
   font-size: 1.8rem;
 }
-.catalog-page__cookies:hover {
+.catalog-page__categories__cookies:hover {
   box-shadow: 0 0.5rem 2rem rgb(255, 210, 172);
 }
-.catalog-page__cookies img {
+.catalog-page__categories__cookies img {
   width: 18rem;
   height: 22rem;
   border-radius: 0.5rem;
 }
-.catalog-page__candy-bar {
+.catalog-page__categories__candy-bar {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -249,20 +255,20 @@ mark.orange {
   transition: 0.3s;
   animation-duration: 1s;
 }
-.catalog-page__candy-bar__category__name {
+.catalog-page__categories__candy-bar__category__name {
   margin: 0;
   color: #5c4a4a;
   font-size: 1.8rem;
 }
-.catalog-page__candy-bar:hover {
+.catalog-page__categories__candy-bar:hover {
   box-shadow: 0 0.5rem 2rem rgb(255, 210, 172);
 }
-.catalog-page__candy-bar img {
+.catalog-page__categories__candy-bar img {
   width: 18rem;
   height: 22rem;
   border-radius: 0.5rem;
 }
-.catalog-page__bakery {
+.catalog-page__categories__bakery {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -277,20 +283,20 @@ mark.orange {
   animation-duration: 1s;
   cursor: pointer;
 }
-.catalog-page__bakery__category__name {
+.catalog-page__categories__bakery__category__name {
   margin: 0;
   color: #5c4a4a;
   font-size: 1.8rem;
 }
-.catalog-page__bakery:hover {
+.catalog-page__categories__bakery:hover {
   box-shadow: 0 0.5rem 2rem rgb(255, 210, 172);
 }
-.catalog-page__bakery img {
+.catalog-page__categories__bakery img {
   width: 18rem;
   height: 22rem;
   border-radius: 0.5rem;
 }
-.catalog-page__ice-cream {
+.catalog-page__categories__ice-cream {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -305,15 +311,15 @@ mark.orange {
   animation-duration: 1s;
   cursor: pointer;
 }
-.catalog-page__ice-cream__category__name {
+.catalog-page__categories__ice-cream__category__name {
   margin: 0;
   color: #5c4a4a;
   font-size: 1.8rem;
 }
-.catalog-page__ice-cream:hover {
+.catalog-page__categories__ice-cream:hover {
   box-shadow: 0 0.5rem 2rem rgb(255, 210, 172);
 }
-.catalog-page__ice-cream img {
+.catalog-page__categories__ice-cream img {
   width: 18rem;
   height: 22rem;
   border-radius: 0.5rem;
@@ -334,6 +340,34 @@ mark.orange {
   to {
     margin-top: 8rem;
   }
+}
+.cakes {
+  display: flex;
+  width: 20rem;
+}
+.cakes__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0.5rem 2rem rgba(4, 3, 3, 0.1019607843);
+  height: 26rem;
+  border-radius: 0.5rem;
+}
+.cakes__container__price {
+  margin-top: 0;
+}
+.cakes img {
+  width: 15rem;
+  height: 18rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+
+.products-showcase {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
 
 /*# sourceMappingURL=all.css.map */

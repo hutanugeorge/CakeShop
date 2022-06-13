@@ -1,0 +1,27 @@
+.cakes {
+  display: flex;
+  width: 20rem;
+
+
+
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 .5rem 2rem #0403031a;
+    height: 26rem;
+    border-radius: .5rem;
+
+
+    &__price {
+      margin-top: 0;
+    }
+  }
+
+  & img {
+    width: 15rem;
+    height: 18rem;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+  }
+}
