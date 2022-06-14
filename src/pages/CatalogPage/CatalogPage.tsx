@@ -10,9 +10,12 @@ import NavBar from '../../components/NavBar/NavBar'
 export default () => {
 
    const cakesSection = useRef(null)
+   const cookiesSection = useRef(null)
+   const bakerySection = useRef(null)
+   const iceCreamSection = useRef(null)
 
-   const gotoCakes = () => window.scrollTo({
-      top: cakesSection.current && cakesSection.current.offsetTop,
+   const gotoElement = ( section : any) => window.scrollTo({
+      top: section.current && section.current.offsetTop,
       behavior: 'smooth'
    })
 
@@ -21,13 +24,13 @@ export default () => {
          <NavBar/>
          <div className="catalog-page">
             <div className="catalog-page__categories">
-               <div className="catalog-page__categories__cakes" onClick={() => gotoCakes()}>
+               <div className="catalog-page__categories__cakes" onClick={() => gotoElement(cakesSection)}>
                   <img src="./cake.avif" alt="cake image"/>
                   <div className="catalog-page__categories__cakes__category">
                      <p className="catalog-page__categories__cakes__category__name">Torturi</p>
                   </div>
                </div>
-               <div className="catalog-page__categories__cookies">
+               <div className="catalog-page__categories__cookies" onClick={() => gotoElement(cookiesSection)}>
                   <img src="./macarons.avif" alt="cake"/>
                   <div className="catalog-page__categories__cookies__category">
                      <p className="catalog-page__categories__cookies__category__name">Prajituri</p>
@@ -41,13 +44,13 @@ export default () => {
                         Bar</p>
                   </div>
                </div>
-               <div className="catalog-page__categories__bakery">
+               <div className="catalog-page__categories__bakery" onClick={() => gotoElement(bakerySection)}>
                   <img src="./bakery.avif" alt="cake"/>
                   <div className="catalog-page__categories__bakery__category">
                      <p className="catalog-page__categories__bakery__category__name">Brutărie </p>
                   </div>
                </div>
-               <div className="catalog-page__categories__ice-cream">
+               <div className="catalog-page__categories__ice-cream" onClick={() => gotoElement(iceCreamSection)}>
                   <img
                      src="https://www.foodiecrush.com/wp-content/uploads/2017/05/No-Churn-Ice-Cream-foodiecrush.com-31.jpg"
                      alt="cake"/>
@@ -56,10 +59,11 @@ export default () => {
                   </div>
                </div>
             </div>
-            <div className="catalog-page__products-showcase" ref={cakesSection}>
-               <p className="catalog-page__products-showcase__title">Torturi</p>
+            <div className="catalog-page__products-showcase">
+               <p className="catalog-page__products-showcase__title" ref={cakesSection}>Torturi</p>
                <hr className="horizontal-line"/>
-               <p className="catalog-page__products-showcase__quote">O petrecere fara un tort este doar o
+               <p className="catalog-page__products-showcase__quote">O petrecere fara un tort este
+                  doar o
                   intalnire!</p>
                <div className="catalog-page__products-showcase__cakes">
                   <Cakes type={'Tort insiropat'} price={'60 ron/kg'} image={'./cake.avif'}/>
@@ -72,9 +76,11 @@ export default () => {
                   <Cakes type={'Tort insiropat'} price={'60 ron/kg'} image={'./cake.avif'}/>
                   <Cakes type={'Tort insiropat'} price={'60 ron/kg'} image={'./cake.avif'}/>
                </div>
-               <p className="catalog-page__products-showcase__title ">Prajituri</p>
+               <p className="catalog-page__products-showcase__title "
+                  ref={cookiesSection}>Prajituri</p>
                <hr className="horizontal-line"/>
-               <p className="catalog-page__products-showcase__quote">Viata e scurta, asa ca indulceste-o!</p>
+               <p className="catalog-page__products-showcase__quote">Viata e scurta, asa ca
+                  indulceste-o!</p>
                <div className="catalog-page__products-showcase__cookies">
                   <Cookies type={'Prajitura'} price={'61 ron/kg'} image={'./macarons.avif'}/>
                   <Cookies type={'Prajitura'} price={'61 ron/kg'} image={'./macarons.avif'}/>
@@ -90,9 +96,11 @@ export default () => {
                   <Cookies type={'Prajitura'} price={'61 ron/kg'} image={'./macarons.avif'}/>
                   <Cookies type={'Prajitura'} price={'61 ron/kg'} image={'./macarons.avif'}/>
                </div>
-               <p className="catalog-page__products-showcase__title">Brutarie</p>
+               <p className="catalog-page__products-showcase__title"
+                  ref={bakerySection}>Brutarie</p>
                <hr className="horizontal-line"/>
-               <p className="catalog-page__products-showcase__quote">Dragoste la prima muscatura!</p>
+               <p className="catalog-page__products-showcase__quote">Dragoste la prima
+                  muscatura!</p>
                <div className="catalog-page__products-showcase__bakery">
                   <Bakery type={'Placinta'} price={'12 ron'} image={'./bakery.avif'}/>
                   <Bakery type={'Placinta'} price={'12 ron'} image={'./bakery.avif'}/>
@@ -103,10 +111,13 @@ export default () => {
                </div>
                <div className="catalog-page__products-showcase__ice-cream">
                   <img src="./ice-cream.png" alt="ice cream"/>
-                  <div className="catalog-page__products-showcase__ice-cream__info">
-                     <p className="catalog-page__products-showcase__ice-cream__info__title">Inghetata de aia
+                  <div className="catalog-page__products-showcase__ice-cream__info"
+                       ref={iceCreamSection}>
+                     <p className="catalog-page__products-showcase__ice-cream__info__title">Inghetata
+                        de aia
                         buna</p>
-                     <p className="catalog-page__products-showcase__ice-cream__info__message">Lorem ipsum dolor
+                     <p className="catalog-page__products-showcase__ice-cream__info__message">Lorem
+                        ipsum dolor
                         sit amet, consectetur adipisicing elit. Dolor, ea?</p>
                      <div className="catalog-page__products-showcase__ice-cream__info__flavours">
                         cioco
