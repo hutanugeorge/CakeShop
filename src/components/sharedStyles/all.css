@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Calligraffitti&family=Open+Sans:wght@300&display=swap");
 .nav-bar {
   display: flex;
   align-items: center;
@@ -164,11 +166,14 @@ mark.orange {
   display: flex;
   flex-direction: column;
   gap: 15rem;
+  align-items: center;
+  padding-top: 5rem;
 }
 .catalog-page__categories {
   display: flex;
   justify-content: center;
   width: 100%;
+  align-items: center;
   height: 100%;
   gap: 3rem;
   flex-wrap: wrap;
@@ -247,7 +252,7 @@ mark.orange {
   cursor: pointer;
   flex-direction: column;
   padding-top: 2rem;
-  margin-top: 15rem;
+  margin-top: 5rem;
   min-width: 20rem;
   box-shadow: 0 0.5rem 2rem rgba(4, 3, 3, 0.1019607843);
   width: 15%;
@@ -274,7 +279,7 @@ mark.orange {
   align-items: center;
   flex-direction: column;
   padding-top: 2rem;
-  margin-top: 15rem;
+  margin-top: 5rem;
   min-width: 20rem;
   box-shadow: 0 0.5rem 2rem rgba(4, 3, 3, 0.1019607843);
   width: 15%;
@@ -302,13 +307,13 @@ mark.orange {
   align-items: center;
   flex-direction: column;
   padding-top: 2rem;
-  margin-top: 5rem;
   min-width: 20rem;
   box-shadow: 0 0.5rem 2rem rgba(4, 3, 3, 0.1019607843);
   width: 15%;
   height: 45%;
   transition: 0.3s;
   animation-duration: 1s;
+  margin-top: 5rem;
   cursor: pointer;
 }
 .catalog-page__categories__ice-cream__category__name {
@@ -344,6 +349,7 @@ mark.orange {
 .cakes {
   display: flex;
   width: 20rem;
+  justify-content: center;
 }
 .cakes__container {
   display: flex;
@@ -351,23 +357,189 @@ mark.orange {
   flex-direction: column;
   box-shadow: 0 0.5rem 2rem rgba(4, 3, 3, 0.1019607843);
   height: 26rem;
+  width: 15rem;
   border-radius: 0.5rem;
 }
 .cakes__container__price {
   margin-top: 0;
+  color: #424141;
+  font-size: 1rem;
+}
+.cakes__container__type {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.cakes__container__button {
+  border-radius: 0.5rem;
+  background-color: #f67715;
+  color: white;
+  border: none;
+  height: 1.7rem;
+  width: 7rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.cakes__container__button:hover {
+  height: 1.8rem;
+  width: 7.5rem;
+  font-size: 1rem;
+}
+.cakes__container:hover {
+  box-shadow: 0 0.5rem 2rem rgb(255, 210, 172);
 }
 .cakes img {
   width: 15rem;
   height: 18rem;
   border-top-right-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
+  cursor: pointer;
 }
 
-.products-showcase {
+.products-showcase__cakes {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+  padding-bottom: 10rem;
+}
+.products-showcase__cookies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding-bottom: 10rem;
+}
+.products-showcase__bakery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding-bottom: 10rem;
+}
+.products-showcase__title {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  border-bottom: 1px;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  color: #424141;
+}
+.products-showcase__quote {
+  display: flex;
+  justify-content: center;
+  font-family: "Calligraffitti", cursive;
+  font-size: 3rem;
+  margin-top: 0;
+  color: #f67715;
+}
+
+.horizontal-line {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, #ccc, #444141, #ccc);
+  width: 15rem;
+}
+
+.cookies {
+  display: flex;
+  width: 20rem;
+  justify-content: center;
+}
+.cookies__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0.5rem 2rem rgba(4, 3, 3, 0.1019607843);
+  height: 26rem;
+  width: 15rem;
+  border-radius: 0.5rem;
+}
+.cookies__container__price {
+  margin-top: 0;
+  color: #424141;
+  font-size: 1rem;
+}
+.cookies__container__type {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.cookies__container__button {
+  border-radius: 0.5rem;
+  background-color: #f67715;
+  color: white;
+  border: none;
+  height: 1.7rem;
+  width: 7rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.cookies__container__button:hover {
+  height: 1.8rem;
+  width: 7.5rem;
+  font-size: 1rem;
+}
+.cookies__container:hover {
+  box-shadow: 0 0.5rem 2rem rgb(255, 210, 172);
+}
+.cookies img {
+  width: 15rem;
+  height: 18rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.bakery {
+  display: flex;
+  width: 20rem;
+  justify-content: center;
+}
+.bakery__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0.5rem 2rem rgba(4, 3, 3, 0.1019607843);
+  height: 26rem;
+  width: 15rem;
+  border-radius: 0.5rem;
+}
+.bakery__container__price {
+  margin-top: 0;
+  color: #424141;
+  font-size: 1rem;
+}
+.bakery__container__type {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.bakery__container__button {
+  border-radius: 0.5rem;
+  background-color: #f67715;
+  color: white;
+  border: none;
+  height: 1.7rem;
+  width: 7rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.bakery__container__button:hover {
+  height: 1.8rem;
+  width: 7.5rem;
+  font-size: 1rem;
+}
+.bakery__container:hover {
+  box-shadow: 0 0.5rem 2rem rgb(255, 210, 172);
+}
+.bakery img {
+  width: 15rem;
+  height: 18rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=all.css.map */
