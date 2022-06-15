@@ -5,6 +5,10 @@
   align-items: center;
   border-bottom: 1px solid #ccc;
   gap: 25%;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  top: 0;
 }
 .nav-bar__logo {
   cursor: pointer;
@@ -20,38 +24,38 @@
 .nav-bar__menu__home {
   font-weight: 500;
   font-style: italic;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #494949;
   cursor: pointer;
   transition: 0.3s;
 }
 .nav-bar__menu__home:hover {
   color: #f67715;
-  font-size: 1.35rem;
+  font-size: 1.45rem;
 }
 .nav-bar__menu__catalog {
   font-weight: 500;
   font-style: italic;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #494949;
   cursor: pointer;
   transition: 0.3s;
 }
 .nav-bar__menu__catalog:hover {
   color: #f67715;
-  font-size: 1.35rem;
+  font-size: 1.45rem;
 }
 .nav-bar__menu__about-us {
   font-weight: 500;
   font-style: italic;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #494949;
   cursor: pointer;
   transition: 0.3s;
 }
 .nav-bar__menu__about-us:hover {
   color: #f67715;
-  font-size: 1.35rem;
+  font-size: 1.45rem;
 }
 .nav-bar img {
   width: 15rem;
@@ -66,6 +70,7 @@
   height: 100vh;
   min-width: 10rem;
   gap: 5rem;
+  margin-top: 5rem;
 }
 .landing-page__left-section {
   width: 33%;
@@ -167,7 +172,8 @@ mark.orange {
   flex-direction: column;
   gap: 15rem;
   align-items: center;
-  padding-top: 5rem;
+  margin-top: 5rem;
+  padding-top: 5.5rem;
 }
 .catalog-page__categories {
   display: flex;
@@ -369,6 +375,10 @@ mark.orange {
 }
 .catalog-page__products-showcase__ice-cream {
   display: flex;
+  transition: 5s;
+  height: 50rem;
+  margin: 0 2rem;
+  gap: 5rem;
 }
 .catalog-page__products-showcase__ice-cream__info {
   display: flex;
@@ -378,6 +388,7 @@ mark.orange {
 .catalog-page__products-showcase__ice-cream__info__title {
   display: flex;
   justify-content: flex-start;
+  font-style: italic;
   font-size: 3rem;
   border-bottom: 1px;
   font-family: "Open Sans", sans-serif;
@@ -393,29 +404,38 @@ mark.orange {
   color: #f67715;
 }
 .catalog-page__products-showcase__ice-cream img {
+  width: 25rem;
   height: 30rem;
+  border-radius: 4rem;
 }
-.catalog-page .horizontal-line {
+
+.horizontal-line {
   border: 0;
   height: 1px;
   background-image: linear-gradient(to right, #ccc, #444141, #ccc);
   width: 15rem;
 }
 
-@keyframes slide_in-first {
+.scroll-up-button {
+  position: fixed;
+  display: none;
+  left: 95%;
+  top: 10%;
+  cursor: pointer;
+}
+.scroll-up-button__visible {
+  display: unset;
+}
+.scroll-up-button svg {
+  color: #f67715;
+}
+
+@keyframes slide_in {
   from {
     margin-top: 14rem;
   }
   to {
     margin-top: 2rem;
-  }
-}
-@keyframes slide_in-second {
-  from {
-    margin-top: 15rem;
-  }
-  to {
-    margin-top: 8rem;
   }
 }
 .cakes {

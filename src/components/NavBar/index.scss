@@ -3,6 +3,10 @@
   align-items: center;
   border-bottom: 1px solid #ccc;
   gap: 25%;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  top: 0;
 
   &__logo {
     cursor: pointer;
@@ -19,42 +23,42 @@
     &__home {
       font-weight: 500;
       font-style: italic;
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       color: #494949;
       cursor: pointer;
       transition: 0.3s;
 
       &:hover {
         color: #f67715;
-        font-size: 1.35rem;
+        font-size: 1.45rem;
       }
     }
 
     &__catalog {
       font-weight: 500;
       font-style: italic;
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       color: #494949;
       cursor: pointer;
       transition: 0.3s;
 
       &:hover {
         color: #f67715;
-        font-size: 1.35rem;
+        font-size: 1.45rem;
       }
     }
 
     &__about-us {
       font-weight: 500;
       font-style: italic;
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       color: #494949;
       cursor: pointer;
       transition: 0.3s;
 
       &:hover {
         color: #f67715;
-        font-size: 1.35rem;
+        font-size: 1.45rem;
       }
     }
   }

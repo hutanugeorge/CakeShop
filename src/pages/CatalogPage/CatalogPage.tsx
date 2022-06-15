@@ -1,10 +1,11 @@
-import { useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import { useWindowScroll } from 'react-use'
 
-
-import Bakery from '../../components/Categories/Bakery'
-import Cakes from '../../components/Categories/Cakes'
-import Cookies from '../../components/Categories/Cookies'
+import BakeryList from '../../components/Categories/Bakery/BakeryList'
+import CakesList from '../../components/Categories/Cakes/CakesList'
+import CookiesList from '../../components/Categories/Cookies/CookiesList'
 import NavBar from '../../components/NavBar/NavBar'
+import TopArrowIcon from '../../icons/TopArrowIcon'
 
 
 export default () => {
@@ -14,23 +15,41 @@ export default () => {
    const bakerySection = useRef(null)
    const iceCreamSection = useRef(null)
 
-   const gotoElement = ( section : any) => window.scrollTo({
+   const gotoElement = (section: any) => window.scrollTo({
       top: section.current && section.current.offsetTop,
       behavior: 'smooth'
    })
 
+   const scrollToTop = () => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+
+   const { y: pageYOffset } = useWindowScroll()
+   const [visible, setVisible] =useState<boolean>(false)
+
+   useEffect(() => {
+      pageYOffset > 800 ? setVisible(true): setVisible(false)
+   }, [pageYOffset])
+
+   useEffect(() => {
+      window.scrollTo(0, 0)
+   }, [])
+
    return (
       <div className="catalog-page__wrapper">
+         <div className={`scroll-up-button ${visible? 'scroll-up-button__visible': ''}`} onClick={() => scrollToTop()}>
+            <TopArrowIcon />
+         </div>
          <NavBar/>
          <div className="catalog-page">
             <div className="catalog-page__categories">
-               <div className="catalog-page__categories__cakes" onClick={() => gotoElement(cakesSection)}>
+               <div className="catalog-page__categories__cakes"
+                    onClick={() => gotoElement(cakesSection)}>
                   <img src="./cake.avif" alt="cake image"/>
                   <div className="catalog-page__categories__cakes__category">
                      <p className="catalog-page__categories__cakes__category__name">Torturi</p>
                   </div>
                </div>
-               <div className="catalog-page__categories__cookies" onClick={() => gotoElement(cookiesSection)}>
+               <div className="catalog-page__categories__cookies"
+                    onClick={() => gotoElement(cookiesSection)}>
                   <img src="./macarons.avif" alt="cake"/>
                   <div className="catalog-page__categories__cookies__category">
                      <p className="catalog-page__categories__cookies__category__name">Prajituri</p>
@@ -44,13 +63,15 @@ export default () => {
                         Bar</p>
                   </div>
                </div>
-               <div className="catalog-page__categories__bakery" onClick={() => gotoElement(bakerySection)}>
+               <div className="catalog-page__categories__bakery"
+                    onClick={() => gotoElement(bakerySection)}>
                   <img src="./bakery.avif" alt="cake"/>
                   <div className="catalog-page__categories__bakery__category">
                      <p className="catalog-page__categories__bakery__category__name">Brutărie </p>
                   </div>
                </div>
-               <div className="catalog-page__categories__ice-cream" onClick={() => gotoElement(iceCreamSection)}>
+               <div className="catalog-page__categories__ice-cream"
+                    onClick={() => gotoElement(iceCreamSection)}>
                   <img
                      src="https://www.foodiecrush.com/wp-content/uploads/2017/05/No-Churn-Ice-Cream-foodiecrush.com-31.jpg"
                      alt="cake"/>
@@ -66,15 +87,8 @@ export default () => {
                   doar o
                   intalnire!</p>
                <div className="catalog-page__products-showcase__cakes">
-                  <Cakes type={'Tort insiropat'} price={'60 ron/kg'} image={'./cake.avif'}/>
-                  <Cakes type={'Tort insiropat'} price={'60 ron/kg'} image={'./cake.avif'}/>
-                  <Cakes type={'Tort insiropat'} price={'60 ron/kg'} image={'./cake.avif'}/>
-                  <Cakes type={'Tort insiropat'} price={'60 ron/kg'} image={'./cake.avif'}/>
-                  <Cakes type={'Tort insiropat'} price={'60 ron/kg'} image={'./cake.avif'}/>
-                  <Cakes type={'Tort insiropat'} price={'60 ron/kg'} image={'./cake.avif'}/>
-                  <Cakes type={'Tort insiropat'} price={'60 ron/kg'} image={'./cake.avif'}/>
-                  <Cakes type={'Tort insiropat'} price={'60 ron/kg'} image={'./cake.avif'}/>
-                  <Cakes type={'Tort insiropat'} price={'60 ron/kg'} image={'./cake.avif'}/>
+                  <CakesList/>
+
                </div>
                <p className="catalog-page__products-showcase__title "
                   ref={cookiesSection}>Prajituri</p>
@@ -82,19 +96,7 @@ export default () => {
                <p className="catalog-page__products-showcase__quote">Viata e scurta, asa ca
                   indulceste-o!</p>
                <div className="catalog-page__products-showcase__cookies">
-                  <Cookies type={'Prajitura'} price={'61 ron/kg'} image={'./macarons.avif'}/>
-                  <Cookies type={'Prajitura'} price={'61 ron/kg'} image={'./macarons.avif'}/>
-                  <Cookies type={'Prajitura'} price={'61 ron/kg'} image={'./macarons.avif'}/>
-                  <Cookies type={'Prajitura'} price={'61 ron/kg'} image={'./macarons.avif'}/>
-                  <Cookies type={'Prajitura'} price={'61 ron/kg'} image={'./macarons.avif'}/>
-                  <Cookies type={'Prajitura'} price={'61 ron/kg'} image={'./macarons.avif'}/>
-                  <Cookies type={'Prajitura'} price={'61 ron/kg'} image={'./macarons.avif'}/>
-                  <Cookies type={'Prajitura'} price={'61 ron/kg'} image={'./macarons.avif'}/>
-                  <Cookies type={'Prajitura'} price={'61 ron/kg'} image={'./macarons.avif'}/>
-                  <Cookies type={'Prajitura'} price={'61 ron/kg'} image={'./macarons.avif'}/>
-                  <Cookies type={'Prajitura'} price={'61 ron/kg'} image={'./macarons.avif'}/>
-                  <Cookies type={'Prajitura'} price={'61 ron/kg'} image={'./macarons.avif'}/>
-                  <Cookies type={'Prajitura'} price={'61 ron/kg'} image={'./macarons.avif'}/>
+                  <CookiesList/>
                </div>
                <p className="catalog-page__products-showcase__title"
                   ref={bakerySection}>Brutarie</p>
@@ -102,25 +104,18 @@ export default () => {
                <p className="catalog-page__products-showcase__quote">Dragoste la prima
                   muscatura!</p>
                <div className="catalog-page__products-showcase__bakery">
-                  <Bakery type={'Placinta'} price={'12 ron'} image={'./bakery.avif'}/>
-                  <Bakery type={'Placinta'} price={'12 ron'} image={'./bakery.avif'}/>
-                  <Bakery type={'Placinta'} price={'12 ron'} image={'./bakery.avif'}/>
-                  <Bakery type={'Placinta'} price={'12 ron'} image={'./bakery.avif'}/>
-                  <Bakery type={'Placinta'} price={'12 ron'} image={'./bakery.avif'}/>
-                  <Bakery type={'Placinta'} price={'12 ron'} image={'./bakery.avif'}/>
+                  <BakeryList/>
                </div>
                <div className="catalog-page__products-showcase__ice-cream">
-                  <img src="./ice-cream.png" alt="ice cream"/>
+                  <img src="./iceCream.png" alt="ice cream"/>
                   <div className="catalog-page__products-showcase__ice-cream__info"
                        ref={iceCreamSection}>
-                     <p className="catalog-page__products-showcase__ice-cream__info__title">Inghetata
-                        de aia
-                        buna</p>
+                     <p className="catalog-page__products-showcase__ice-cream__info__title">Inghetata</p>
                      <p className="catalog-page__products-showcase__ice-cream__info__message">Lorem
                         ipsum dolor
                         sit amet, consectetur adipisicing elit. Dolor, ea?</p>
                      <div className="catalog-page__products-showcase__ice-cream__info__flavours">
-                        cioco
+
                      </div>
                   </div>
                </div>
