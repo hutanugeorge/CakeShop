@@ -1,8 +1,13 @@
+import {useNavigate} from 'react-router-dom'
+
 import NavBar from '../../components/NavBar/NavBar'
 import CheckIcon from '../../icons/CheckIcon'
 
 
 export default () => {
+
+   const navigate = useNavigate()
+
    return (
       <div className="landing-page__wrapper">
          <NavBar/>
@@ -43,7 +48,7 @@ export default () => {
                   </p>
                </div>
                <div className="landing-page__right-section__explore">
-                  <button className="landing-page__right-section__explore__explore-button" onClick={ () => {window.location.href='/catalog'}}>Explorează
+                  <button className="landing-page__right-section__explore__explore-button" onClick={() => navigate('/catalog')}>Explorează
                   </button>
                </div>
             </div>

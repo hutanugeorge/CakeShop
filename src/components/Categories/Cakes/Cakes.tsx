@@ -1,8 +1,10 @@
 import CakeProps from './interface';
 
-export default ({type, price, image}: CakeProps) => {
+export default ({type, price, image, path}: CakeProps) => {
+
+
    return (
-      <div className='cakes'>
+      <div className='cakes' >
          <div className='cakes__container'>
             <img src={image} alt='cake image' />
             <p className='cakes__container__type'>{type}</p>

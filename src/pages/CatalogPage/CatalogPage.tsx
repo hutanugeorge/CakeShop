@@ -23,20 +23,22 @@ export default () => {
    const scrollToTop = () => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
 
    const { y: pageYOffset } = useWindowScroll()
-   const [visible, setVisible] =useState<boolean>(false)
-
-   useEffect(() => {
-      pageYOffset > 800 ? setVisible(true): setVisible(false)
-   }, [pageYOffset])
+   const [ visible, setVisible ] = useState<boolean>(false)
 
    useEffect(() => {
       window.scrollTo(0, 0)
    }, [])
 
+   useEffect(() => {
+      pageYOffset > 800 ? setVisible(true) : setVisible(false)
+   }, [ pageYOffset ])
+
+
    return (
       <div className="catalog-page__wrapper">
-         <div className={`scroll-up-button ${visible? 'scroll-up-button__visible': ''}`} onClick={() => scrollToTop()}>
-            <TopArrowIcon />
+         <div className={`scroll-up-button ${visible ? 'scroll-up-button__visible' : ''}`}
+              onClick={() => scrollToTop()}>
+            <TopArrowIcon/>
          </div>
          <NavBar/>
          <div className="catalog-page">

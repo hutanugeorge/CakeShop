@@ -488,6 +488,22 @@ mark.orange {
   cursor: pointer;
 }
 
+.cake-list__tort-insiropat {
+  visibility: hidden;
+  position: fixed;
+  width: 100%;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+.cake-list__tort-insiropat__visible {
+  visibility: visible;
+}
+
 .cookies {
   display: flex;
   width: 20rem;
@@ -586,6 +602,69 @@ mark.orange {
   border-top-right-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
   cursor: pointer;
+}
+
+.cake-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  height: 45rem;
+  background-color: white;
+  border-radius: 3rem;
+  cursor: default;
+}
+.cake-info__details {
+  display: flex;
+  flex-direction: column;
+  height: 85%;
+  padding-left: 2rem;
+}
+.cake-info__details__title {
+  font-size: 3rem;
+  color: #f67715;
+}
+.cake-info__details__price {
+  font-size: 1.3rem;
+}
+.cake-info__details__composition {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+.cake-info__details__composition__title {
+  font-size: 1.5rem;
+  color: #f67715;
+  margin: 0 0 1rem 0;
+}
+.cake-info__details__composition li {
+  font-size: 1.1rem;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+.cake-info__details__recommendation {
+  font-size: 1.2rem;
+}
+.cake-info svg {
+  width: 2rem;
+  height: 2rem;
+}
+.cake-info img {
+  height: 45.3rem;
+  border-radius: 3rem;
+}
+
+.price {
+  color: #f67715;
+  background-color: transparent;
+  font-size: 1.5rem;
+  display: flex;
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=all.css.map */

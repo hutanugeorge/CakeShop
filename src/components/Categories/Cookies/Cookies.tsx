@@ -1,9 +1,12 @@
 import CookiesProps from './interface'
+import { useParams } from 'react-router-dom'
 
 
-export default ({type, price, image}: CookiesProps) => {
+export default ({type, price, image, path}: CookiesProps) => {
+
+
    return (
-      <div className='cookies'>
+      <div className='cookies' onClick={() => window.location.pathname = `/catalog/${path}` }>
          <div className='cookies__container'>
             <img src={image} alt='cake image' />
             <p className='cookies__container__type'>{type}</p>

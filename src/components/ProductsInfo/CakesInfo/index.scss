@@ -1,0 +1,75 @@
+.cake-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  height: 45rem;
+  background-color: white;
+  border-radius: 3rem;
+  cursor: default;
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    padding-left: 2rem;
+
+    &__title {
+      font-size: 3rem;
+      color: #F67715FF;
+    }
+
+    &__price {
+      font-size: 1.3rem;
+    }
+
+    &__composition {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin: 0;
+      padding: 0;
+      gap: 2rem;
+
+      &__title {
+        font-size: 1.5rem;
+        color: #F67715FF;
+        margin: 0 0 1rem 0;
+      }
+
+      & li {
+        font-size: 1.1rem;
+        margin-left: 1rem;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &__recommendation {
+      font-size: 1.2rem;
+    }
+  }
+
+
+  & svg {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  & img {
+    height: 45.3rem;
+    border-radius: 3rem;
+  }
+}
+
+
+
+.price {
+  color: #F67715FF;
+  background-color: transparent;
+  font-size: 1.5rem;
+  display: flex;
+  margin-bottom: 1rem;
+
+}

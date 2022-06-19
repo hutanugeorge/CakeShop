@@ -1,6 +1,6 @@
 export default interface CakeProps {
    type: string
    price: string
-   image: string
-   path: string
+   composition: string[]
+   recommendation: string
 }
