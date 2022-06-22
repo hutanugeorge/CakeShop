@@ -89,10 +89,11 @@
         cursor: pointer;
         border: 1px solid transparent;
         border-radius: 1rem;
-        background-color: #f67715;
+        background-color: #FD794F;
         color: white;
-        box-shadow: 5px 5px 10px #f67715;
+        //box-shadow: 5px 5px 10px #FD794F;
         transition: .3s;
+        animation: pulse 1500ms infinite;
 
         &:hover {
           width: 12.5rem;
@@ -106,20 +107,16 @@
 
 mark.orange {
   background-color: transparent;
-  color: #f67715;
+  color: #FD794F;
+
 }
 
-@keyframes glowing {
+@keyframes pulse {
   0% {
-    background-color: #dc8e52;
-    box-shadow: 0 0 3px #f67715;
+    box-shadow: #FD794F 0 0 0 0;
   }
-  50% {
-    background-color: #ea8538;
-    box-shadow: 0 0 10px #f67715;
-  }
-  100% {
-    background-color: #f67715;
-    box-shadow: 0 0 3px #f67715;
+
+  75% {
+    box-shadow: #ff69b400 0 0 0 10px;
   }
 }

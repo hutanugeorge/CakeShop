@@ -2,5 +2,5 @@ export default interface CakeProps {
    type: string
    price: string
    image: string
-   path: string
+   info: any
 }

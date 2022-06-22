@@ -1,4 +1,4 @@
-export default interface CakeProps {
+export default interface BakeryProps {
    composition: string[]
    recommendation: string
 }

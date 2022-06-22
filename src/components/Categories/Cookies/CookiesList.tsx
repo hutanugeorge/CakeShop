@@ -1,16 +1,39 @@
-import Cookies from './index'
+import CookiesInfo from '../../ProductsInfo/CookiesInfo'
+import Cookies from './Cookies'
 
 
 export default () => {
    return <>
-      <Cookies type={'Prajitura1'} price={'61 ron/kg'} image={'./macarons.avif'} path={'Prajitura1'}/>
-      <Cookies type={'Prajitura2'} price={'61 ron/kg'} image={'./macarons.avif'} path={'Prajitura2'}/>
-      <Cookies type={'Prajitura3'} price={'61 ron/kg'} image={'./macarons.avif'} path={'Prajitura3'}/>
-      <Cookies type={'Prajitura4'} price={'61 ron/kg'} image={'./macarons.avif'} path={'Prajitura4'}/>
-      <Cookies type={'Prajitura5'} price={'61 ron/kg'} image={'./macarons.avif'} path={'Prajitura5'}/>
-      <Cookies type={'Prajitura1'} price={'61 ron/kg'} image={'./macarons.avif'} path={'Prajitura1'}/>
-      <Cookies type={'Prajitura1'} price={'61 ron/kg'} image={'./macarons.avif'} path={'Prajitura1'}/>
-      <Cookies type={'Prajitura1'} price={'61 ron/kg'} image={'./macarons.avif'} path={'Prajitura1'}/>
-      <Cookies type={'Prajitura1'} price={'61 ron/kg'} image={'./macarons.avif'} path={'Prajitura1'}/>
+      <div className="cookies-list">
+         <Cookies type={'Prajitura'} price={'52'} image={'./index.jpg'}
+                  info={<CookiesInfo composition={[ 'Cioco', 'Vanilie' ]}
+                                     recommendation={'*Recomandat pentru evenimente'}/>}/>
+         <Cookies type={'Prajitura'} price={'52'} image={'./index.jpg'}
+                  info={<CookiesInfo composition={[ 'Cioco', 'Vanilie' ]}
+                                     recommendation={'*Recomandat pentru evenimente'}/>}/>
+         <Cookies type={'Prajitura'} price={'52'} image={'./index.jpg'}
+                  info={<CookiesInfo composition={[ 'Cioco', 'Vanilie' ]}
+                                     recommendation={'*Recomandat pentru evenimente'}/>}/>
+         <Cookies type={'Prajitura'} price={'52'} image={'./index.jpg'}
+                  info={<CookiesInfo composition={[ 'Cioco', 'Vanilie' ]}
+                                     recommendation={'*Recomandat pentru evenimente'}/>}/>
+         <Cookies type={'Prajitura'} price={'52'} image={'./index.jpg'}
+                  info={<CookiesInfo composition={[ 'Cioco', 'Vanilie' ]}
+                                     recommendation={'*Recomandat pentru evenimente'}/>}/>
+         <Cookies type={'Prajitura'} price={'52'} image={'./index.jpg'}
+                  info={<CookiesInfo composition={[ 'Cioco', 'Vanilie' ]}
+                                     recommendation={'*Recomandat pentru evenimente'}/>}/>
+         <Cookies type={'Prajitura'} price={'52'} image={'./index.jpg'}
+                  info={<CookiesInfo composition={[ 'Cioco', 'Vanilie' ]}
+                                     recommendation={'*Recomandat pentru evenimente'}/>}/>
+         <Cookies type={'Prajitura'} price={'52'} image={'./index.jpg'}
+                  info={<CookiesInfo composition={[ 'Cioco', 'Vanilie' ]}
+                                     recommendation={'*Recomandat pentru evenimente'}/>}/>
+         <Cookies type={'Prajitura'} price={'52'} image={'./index.jpg'}
+                  info={<CookiesInfo composition={[ 'Cioco', 'Vanilie' ]}
+                                     recommendation={'*Recomandat pentru evenimente'}/>}/>
+
+      </div>
+
    </>
 }

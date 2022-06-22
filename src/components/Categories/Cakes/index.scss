@@ -4,6 +4,7 @@
   justify-content: center;
 
   &__container {
+    position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -11,28 +12,32 @@
     height: 26rem;
     width: 15rem;
     border-radius: .5rem;
+    transition: .5s;
 
     &__price {
       margin-top: 0;
       color: #424141;
       font-size: 1rem;
+      z-index: 2;
     }
 
     &__type {
       font-size: 1.2rem;
       cursor: pointer;
+      z-index: 2;
     }
 
     &__button {
       border-radius: .5rem;
-      background-color: #F67715FF;
+      background-color: #FD794F;
       color: white;
       border: none;
       height: 1.7rem;
       width: 7rem;
       font-size: .9rem;
       cursor: pointer;
-      transition: .3s;
+      transition: .6s;
+      z-index: 2;
 
       &:hover {
         height: 1.8rem;
@@ -41,41 +46,45 @@
       }
     }
 
+    & img {
+      width: 15rem;
+      height: 18rem;
+      border-top-right-radius: .5rem;
+      border-top-left-radius: .5rem;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    &__visible {
+      height: 40rem;
+    }
+
+    &__info {
+      display: none;
+    }
+
+    &__info-visible {
+      position: absolute;
+      top: 64%;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+
+    }
+
     &:hover {
       box-shadow: 0 .5rem 2rem rgb(255, 210, 172);
     }
-
-  }
-
-
-
-  & img {
-    width: 15rem;
-    height: 18rem;
-    border-top-right-radius: .5rem;
-    border-top-left-radius: .5rem;
-    cursor: pointer;
   }
 }
 
 .cake-list {
-
-  &__tort-insiropat {
-    visibility: hidden;
-    position: fixed;
-    width: 100%;
-    inset: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    background-color: #0006;
-    cursor: pointer;
-
-    &__visible {
-      visibility: visible;
-    }
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
+
+
 
 
