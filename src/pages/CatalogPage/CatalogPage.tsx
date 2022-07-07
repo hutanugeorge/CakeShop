@@ -43,42 +43,42 @@ export default () => {
          <NavBar/>
          <div className="catalog-page">
             <div className="catalog-page__categories">
-               <div className="catalog-page__categories__cakes"
+               <div className="catalog-page__categories__element"
                     onClick={() => gotoElement(cakesSection)}>
                   <img src="./cake.avif" alt="cake image"/>
-                  <div className="catalog-page__categories__cakes__category">
-                     <p className="catalog-page__categories__cakes__category__name">Torturi</p>
+                  <div className="catalog-page__categories__element__category">
+                     <p className="catalog-page__categories__element__category__name">Torturi</p>
                   </div>
                </div>
-               <div className="catalog-page__categories__cookies"
+               <div className="catalog-page__categories__element"
                     onClick={() => gotoElement(cookiesSection)}>
                   <img src="./macarons.avif" alt="cake"/>
-                  <div className="catalog-page__categories__cookies__category">
-                     <p className="catalog-page__categories__cookies__category__name">Prajituri</p>
+                  <div className="catalog-page__categories__element__category">
+                     <p className="catalog-page__categories__element__category__name">Prajituri</p>
                   </div>
                </div>
-               <div className="catalog-page__categories__candy-bar">
+               <div className="catalog-page__categories__element">
                   <img src="https://wp.wedme.ro/wp-content/uploads/2020/06/Flavius-Partan-056.jpg"
                        alt="cake"/>
-                  <div className="catalog-page__categories__candy-bar__category">
-                     <p className="catalog-page__categories__candy-bar__category__name">Candy
+                  <div className="catalog-page__categories__element__category">
+                     <p className="catalog-page__categories__element__category__name">Candy
                         Bar</p>
                   </div>
                </div>
-               <div className="catalog-page__categories__bakery"
+               <div className="catalog-page__categories__element"
                     onClick={() => gotoElement(bakerySection)}>
                   <img src="./bakery.avif" alt="cake"/>
-                  <div className="catalog-page__categories__bakery__category">
-                     <p className="catalog-page__categories__bakery__category__name">Brutărie </p>
+                  <div className="catalog-page__categories__element__category">
+                     <p className="catalog-page__categories__element__category__name">Brutărie </p>
                   </div>
                </div>
-               <div className="catalog-page__categories__ice-cream"
+               <div className="catalog-page__categories__element"
                     onClick={() => gotoElement(iceCreamSection)}>
                   <img
                      src="https://www.foodiecrush.com/wp-content/uploads/2017/05/No-Churn-Ice-Cream-foodiecrush.com-31.jpg"
                      alt="cake"/>
-                  <div className="catalog-page__categories__ice-cream__category">
-                     <p className="catalog-page__categories__ice-cream__category__name">Inghetata </p>
+                  <div className="catalog-page__categories__element__category">
+                     <p className="catalog-page__categories__element__category__name">Inghetata </p>
                   </div>
                </div>
             </div>

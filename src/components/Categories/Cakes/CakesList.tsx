@@ -1,47 +1,21 @@
 import CakesInfo from '../../ProductsInfo/CakesInfo'
-import Cakes from './Cakes'
+import Cake from './Cakes'
+import {cakesArray} from "../../constants/cakes";
 
 
-export default () => {
-
-   return <>
-      <div className="cake-list">
-         <Cakes type={'Tort insiropat'} price={'60 ron/kg'} image={'./index.jpg'} info={<CakesInfo
-            composition={[ 'Ciocolata', 'Vanilie', 'Cacao', 'Ciocolata', 'Vanilie', 'Cacao' ]}
-            recommendation={'*Recomandat pentru evenimente'}/>}/>
-         <Cakes type={'Tort insiropat'} price={'60 ron/kg'} image={'./index.jpg'} info={<CakesInfo
-            composition={[ 'Ciocolata', 'Vanilie', 'Cacao', 'Ciocolata', 'Vanilie', 'Cacao' ]}
-            recommendation={'*Recomandat pentru evenimente'}/>}/>
-         <Cakes type={'Tort insiropat'} price={'60 ron/kg'} image={'./index.jpg'} info={<CakesInfo
-            composition={[ 'Ciocolata', 'Vanilie', 'Cacao', 'Ciocolata', 'Vanilie', 'Cacao' ]}
-            recommendation={'*Recomandat pentru evenimente'}/>}/>
-         <Cakes type={'Tort insiropat'} price={'60 ron/kg'} image={'./index.jpg'} info={<CakesInfo
-            composition={[ 'Ciocolata', 'Vanilie', 'Cacao', 'Ciocolata', 'Vanilie', 'Cacao' ]}
-            recommendation={'*Recomandat pentru evenimente'}/>}/>
-         <Cakes type={'Tort insiropat'} price={'60 ron/kg'} image={'./index.jpg'} info={<CakesInfo
-            composition={[ 'Ciocolata', 'Vanilie', 'Cacao', 'Ciocolata', 'Vanilie', 'Cacao' ]}
-            recommendation={'*Recomandat pentru evenimente'}/>}/>
-         <Cakes type={'Tort insiropat'} price={'60 ron/kg'} image={'./index.jpg'} info={<CakesInfo
-            composition={[ 'Ciocolata', 'Vanilie', 'Cacao', 'Ciocolata', 'Vanilie', 'Cacao' ]}
-            recommendation={'*Recomandat pentru evenimente'}/>}/>
-         <Cakes type={'Tort insiropat'} price={'60 ron/kg'} image={'./index.jpg'} info={<CakesInfo
-            composition={[ 'Ciocolata', 'Vanilie', 'Cacao', 'Ciocolata', 'Vanilie', 'Cacao' ]}
-            recommendation={'*Recomandat pentru evenimente'}/>}/>
-         <Cakes type={'Tort insiropat'} price={'60 ron/kg'} image={'./index.jpg'} info={<CakesInfo
-            composition={[ 'Ciocolata', 'Vanilie', 'Cacao', 'Ciocolata', 'Vanilie', 'Cacao' ]}
-            recommendation={'*Recomandat pentru evenimente'}/>}/>
-         <Cakes type={'Tort insiropat'} price={'60 ron/kg'} image={'./index.jpg'} info={<CakesInfo
-            composition={[ 'Ciocolata', 'Vanilie', 'Cacao', 'Ciocolata', 'Vanilie', 'Cacao' ]}
-            recommendation={'*Recomandat pentru evenimente'}/>}/>
-         <Cakes type={'Tort insiropat'} price={'60 ron/kg'} image={'./index.jpg'} info={<CakesInfo
-            composition={[ 'Ciocolata', 'Vanilie', 'Cacao', 'Ciocolata', 'Vanilie', 'Cacao' ]}
-            recommendation={'*Recomandat pentru evenimente'}/>}/>
-         <Cakes type={'Tort insiropat'} price={'60 ron/kg'} image={'./index.jpg'} info={<CakesInfo
-            composition={[ 'Ciocolata', 'Vanilie', 'Cacao', 'Ciocolata', 'Vanilie', 'Cacao' ]}
-            recommendation={'*Recomandat pentru evenimente'}/>}/>
-      </div>
-   </>
-
-
-}
+export default () =>
+    <div className={'cake-list'}>
+      {cakesArray.map((cake) => {
+         const {type, price, image, info: {composition, recomandation}} = cake
+         return <Cake
+             type={type}
+             price={`${price} ron/KG`}
+             image={image}
+             info={<CakesInfo
+                 composition={composition}
+                 recommendation={recomandation}/>
+         }
+         />
+      })}
+   </div>
 

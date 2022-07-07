@@ -10,7 +10,7 @@ export default () => {
       <Router>
          <Routes>
             <Route element={<LandingPage />} path={'/'} />
-            <Route element={<CatalogPage />} path={'/catalog/'} />
+            <Route element={<CatalogPage />} path={'/catalog'} />
          </Routes>
       </Router>
    )

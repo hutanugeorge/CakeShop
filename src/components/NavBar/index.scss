@@ -20,44 +20,18 @@
     flex-direction: row;
     gap: 10rem;
     height: 3.5rem;
+    list-style: none;
 
-    &__home {
+    &__item {
       font-weight: 500;
       font-style: italic;
       font-size: 1.4rem;
       color: #494949;
       cursor: pointer;
       transition: 0.3s;
+      text-decoration: none;
 
-      &:hover {
-        color: #f67715;
-        font-size: 1.45rem;
-      }
-    }
-
-    &__catalog {
-      font-weight: 500;
-      font-style: italic;
-      font-size: 1.4rem;
-      color: #494949;
-      cursor: pointer;
-      transition: 0.3s;
-
-      &:hover {
-        color: #f67715;
-        font-size: 1.45rem;
-      }
-    }
-
-    &__about-us {
-      font-weight: 500;
-      font-style: italic;
-      font-size: 1.4rem;
-      color: #494949;
-      cursor: pointer;
-      transition: 0.3s;
-
-      &:hover {
+      &:hover, &--active {
         color: #f67715;
         font-size: 1.45rem;
       }

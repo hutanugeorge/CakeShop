@@ -1,28 +1,37 @@
+import {NavLink, useNavigate} from "react-router-dom";
+
+
 export default () => {
-   return (
-      <div className="nav-bar">
-         <p className="nav-bar__logo" onClick={() => {
-            {
-               window.location.href = '/'
-            }
-         }}>
-            <img src='./Logo.png' alt='logo' />
-         </p>
-         <div className="nav-bar__menu">
-            <p className="nav-bar__menu__home" onClick={() => {
-               window.location.href = '/'
+
+    const navigate = useNavigate();
+
+    return (
+        <div className="nav-bar">
+            <p className="nav-bar__logo" onClick={() => {
+                navigate('/')
             }}>
-               Acasă
+                <img src='./Logo.png' alt='logo'/>
             </p>
-            <p className="nav-bar__menu__catalog" onClick={() => {
-               window.location.href = '/catalog'
-            }}>
-               Catalog
-            </p>
-            <p className="nav-bar__menu__about-us">
-               Despre noi
-            </p>
-         </div>
-      </div>
-   )
+            <ul className="nav-bar__menu">
+                <li>
+                    <NavLink className={({isActive}) => isActive ? 'nav-bar__menu__item nav-bar__menu__item--active' : 'nav-bar__menu__item'
+                    } to={'/'}>
+                        Acasă
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink className={({isActive}) => isActive ? 'nav-bar__menu__item nav-bar__menu__item--active' : 'nav-bar__menu__item'
+                    } to={'/catalog'}>
+                        Catalog
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink className={({isActive}) => isActive ? 'nav-bar__menu__item nav-bar__menu__item--active' : 'nav-bar__menu__item'
+                    } to={'/about-us'}>
+                        Despre noi
+                    </NavLink>
+                </li>
+            </ul>
+        </div>
+    )
 }
