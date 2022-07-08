@@ -4,8 +4,8 @@ export const cakesArray = [
         price: 60,
         image: './index.jpg',
         info: {
-            composition: [],
-            recomandation: 'Recomandat pentru evenimente'
+            composition: ['123', '321'],
+            recommendation: 'Recomandat pentru evenimente'
         }
     },
     {
@@ -14,7 +14,7 @@ export const cakesArray = [
         image: './index.jpg',
         info: {
             composition: [],
-            recomandation: 'Recomandat pentru zile de nastere'
+            recommendation: 'Recomandat pentru zile de nastere'
         }
     },
     {
@@ -23,7 +23,7 @@ export const cakesArray = [
         image: './index.jpg',
         info: {
             composition: [],
-            recomandation: 'Recomandat pentru evenimente'
+            recommendation: 'Recomandat pentru evenimente'
         }
     },
     {
@@ -32,7 +32,7 @@ export const cakesArray = [
         image: './index.jpg',
         info: {
             composition: [],
-            recomandation: 'Recomandat pentru evenimente'
+            recommendation: 'Recomandat pentru evenimente'
         }
     },{
         type: 'Tort insiropat',
@@ -40,7 +40,7 @@ export const cakesArray = [
         image: './index.jpg',
         info: {
             composition: [],
-            recomandation: 'Recomandat pentru evenimente'
+            recommendation: 'Recomandat pentru evenimente'
         }
     },
     {
@@ -49,7 +49,7 @@ export const cakesArray = [
         image: './index.jpg',
         info: {
             composition: [],
-            recomandation: 'Recomandat pentru evenimente'
+            recommendation: 'Recomandat pentru evenimente'
         }
     },
     {
@@ -58,7 +58,7 @@ export const cakesArray = [
         image: './index.jpg',
         info: {
             composition: [],
-            recomandation: 'Recomandat pentru evenimente'
+            recommendation: 'Recomandat pentru evenimente'
         }
     },
     {
@@ -67,7 +67,7 @@ export const cakesArray = [
         image: './index.jpg',
         info: {
             composition: [],
-            recomandation: 'Recomandat pentru evenimente'
+            recommendation: 'Recomandat pentru evenimente'
         }
     },
     {
@@ -76,7 +76,7 @@ export const cakesArray = [
         image: './index.jpg',
         info: {
             composition: [],
-            recomandation: 'Recomandat pentru evenimente'
+            recommendation: 'Recomandat pentru evenimente'
         }
     },
     {
@@ -85,7 +85,7 @@ export const cakesArray = [
         image: './index.jpg',
         info: {
             composition: [],
-            recomandation: 'Recomandat pentru evenimente'
+            recommendation: 'Recomandat pentru evenimente'
         }
     },
 

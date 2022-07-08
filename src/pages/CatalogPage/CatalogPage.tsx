@@ -90,7 +90,6 @@ export default () => {
                   intalnire!</p>
                <div className="catalog-page__products-showcase__cakes">
                   <CakesList/>
-
                </div>
                <p className="catalog-page__products-showcase__title "
                   ref={cookiesSection}>Prajituri</p>
