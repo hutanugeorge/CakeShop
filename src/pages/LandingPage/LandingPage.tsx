@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import {useNavigate} from 'react-router-dom'
 import Footer from '../../components/Footer'
 
@@ -8,6 +9,10 @@ import CheckIcon from '../../icons/CheckIcon'
 export default () => {
 
    const navigate = useNavigate()
+
+   useEffect(() => {
+      window.scrollTo({ top: 0 })
+   },[])
 
    return (
       <div className="landing-page__wrapper">

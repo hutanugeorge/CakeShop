@@ -46,10 +46,9 @@
   justify-content: center;
   background-color: #f3f5f7;
   width: 100vw;
-  height: 100vh;
-  min-width: 10rem;
+  height: 100%;
   gap: 5rem;
-  margin-top: 5rem;
+  padding: 5rem 0;
 }
 .landing-page__left-section {
   width: 33%;
@@ -699,6 +698,109 @@ mark.orange {
   border-radius: 5rem;
   height: 6rem;
   width: 6rem;
+}
+
+.about-us {
+  background: rgb(243, 245, 247);
+  background: radial-gradient(circle, rgb(243, 245, 247) 85%, rgb(255, 166, 138) 100%);
+  margin-top: 5rem;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 5.5rem;
+}
+.about-us__left-section {
+  width: 30rem;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about-us__left-section__title {
+  font-size: 1.8rem;
+  margin: 0;
+  font-style: italic;
+}
+.about-us__left-section__content__element {
+  font-size: 1.2rem;
+  color: #494949;
+}
+.about-us__middle-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+}
+.about-us__middle-section__our-story {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  align-items: center;
+}
+.about-us__middle-section__our-story__title {
+  font-size: 1.8rem;
+  margin: 2rem 0 0 0;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+  width: 25rem;
+}
+.about-us__middle-section__our-story__story {
+  color: #494949;
+  font-size: 1.2rem;
+  width: 25rem;
+}
+.about-us__middle-section__group-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10rem 10rem 2rem 2rem;
+}
+.about-us__right-section {
+  display: flex;
+  height: 40rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  border-radius: 4rem;
+}
+.about-us__right-section__contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.about-us__right-section__contact__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+}
+.about-us__right-section__contact__list__element {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.about-us__right-section__contact__list__social {
+  display: flex;
+  gap: 1.5rem;
+}
+.about-us__right-section__contact__list__social__element {
+  cursor: pointer;
+}
+.about-us__right-section__contact svg {
+  width: 2.5rem;
+  height: 3rem;
+}
+.about-us__horizontal-line {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, #ccc, #444141, #ccc);
+  width: 15rem;
+  margin: 0;
 }
 
 .footer {

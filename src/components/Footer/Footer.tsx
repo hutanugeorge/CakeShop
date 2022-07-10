@@ -41,8 +41,8 @@ export default () => {
       <div className="footer__follow-us">
          <p className="footer__follow-us__title">Urmareste-ne!</p>
          <div className="footer__follow-us__platforms">
-            <div className="link" onClick={() => window.open('https://www.facebook.com/Cofetaria-Acasa-Targu-Ocna-101771164709091')}><FacebookIcon/></div>
-            <div className="link" onClick={() => window.open('https://www.instagram.com/claudiabranzaru/')}><InstagramIcon/></div>
+            <p className="link" onClick={() => window.open('https://www.facebook.com/Cofetaria-Acasa-Targu-Ocna-101771164709091')}><FacebookIcon/></p>
+            <p className="link" onClick={() => window.open('https://www.instagram.com/claudiabranzaru/')}><InstagramIcon/></p>
          </div>
       </div>
    </div>

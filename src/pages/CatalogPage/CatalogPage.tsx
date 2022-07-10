@@ -12,6 +12,8 @@ import TopArrowIcon from '../../icons/TopArrowIcon'
 
 export default () => {
 
+   const [showCakes, setShowCakes] = useState(false)
+
    const cakesSection = useRef(null)
    const cookiesSection = useRef(null)
    const bakerySection = useRef(null)

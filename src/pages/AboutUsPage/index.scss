@@ -1,0 +1,126 @@
+.about-us {
+  background: rgb(243, 245, 247);
+  background: radial-gradient(circle, rgba(243, 245, 247, 1) 85%, rgba(255, 166, 138, 1) 100%);
+  margin-top: 5rem;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 5.5rem;
+
+  &__left-section {
+    width: 30rem;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__title {
+      font-size: 1.8rem;
+      margin: 0;
+      font-style: italic;
+    }
+
+    &__content {
+
+      &__element {
+        font-size: 1.2rem;
+        color: #494949;
+      }
+    }
+  }
+
+  &__middle-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+
+    &__our-story {
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+      align-items: center;
+
+      &__title {
+        font-size: 1.8rem;
+        margin: 2rem 0 0 0;
+        font-style: italic;
+        display: flex;
+        justify-content: center;
+        width: 25rem;
+      }
+
+      &__story {
+        color: #494949;
+        font-size: 1.2rem;
+        width: 25rem;
+      }
+    }
+
+    &__group-photo {
+
+      & img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10rem 10rem 2rem 2rem;
+      }
+    }
+  }
+
+  &__right-section {
+    display: flex;
+    height: 40rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    border-radius: 4rem;
+
+    &__contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+
+        &__element {
+          font-size: 1.5rem;
+          display: flex;
+          align-items: center;
+        }
+
+        &__social {
+          display: flex;
+          gap: 1.5rem;
+
+          &__element {
+            cursor: pointer;
+          }
+        }
+      }
+
+      & svg {
+        width: 2.5rem;
+        height: 3rem;
+      }
+    }
+  }
+
+
+  &__horizontal-line {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, #ccc, #444141, #ccc);
+    width: 15rem;
+    margin: 0;
+  }
+}
+
