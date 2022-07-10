@@ -1,4 +1,5 @@
 import {useNavigate} from 'react-router-dom'
+import Footer from '../../components/Footer'
 
 import NavBar from '../../components/NavBar/NavBar'
 import CheckIcon from '../../icons/CheckIcon'
@@ -34,15 +35,15 @@ export default () => {
             </div>
             <div className="landing-page__right-section">
                <div className="landing-page__right-section__features">
-                  <div className="landing-page__right-section__features__feature-1">
+                  <div className="landing-page__right-section__features__feature">
                      <CheckIcon/>
                      Torturi personalizate
                   </div>
-                  <p className="landing-page__right-section__features__feature-2">
+                  <p className="landing-page__right-section__features__feature">
                      <CheckIcon/>
-                     Livrare la domiciliu
+                     Preparate fara premixuri
                   </p>
-                  <p className="landing-page__right-section__features__feature-3">
+                  <p className="landing-page__right-section__features__feature">
                      <CheckIcon/>
                      Ingrediente naturale
                   </p>
@@ -52,8 +53,8 @@ export default () => {
                   </button>
                </div>
             </div>
-
          </div>
+         <Footer />
       </div>
 
    )

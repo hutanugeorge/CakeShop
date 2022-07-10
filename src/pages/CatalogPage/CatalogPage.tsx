@@ -3,7 +3,9 @@ import { useWindowScroll } from 'react-use'
 
 import BakeryList from '../../components/Categories/Bakery/BakeryList'
 import CakesList from '../../components/Categories/Cakes/CakesList'
+import CandyBar from '../../components/Categories/CandyBar'
 import CookiesList from '../../components/Categories/Cookies/CookiesList'
+import Footer from '../../components/Footer'
 import NavBar from '../../components/NavBar/NavBar'
 import TopArrowIcon from '../../icons/TopArrowIcon'
 
@@ -14,6 +16,7 @@ export default () => {
    const cookiesSection = useRef(null)
    const bakerySection = useRef(null)
    const iceCreamSection = useRef(null)
+   const candyBarSection = useRef(null)
 
    const gotoElement = (section: any) => window.scrollTo({
       top: section.current && section.current.offsetTop,
@@ -57,7 +60,7 @@ export default () => {
                      <p className="catalog-page__categories__element__category__name">Prajituri</p>
                   </div>
                </div>
-               <div className="catalog-page__categories__element">
+               <div className="catalog-page__categories__element" onClick={() => gotoElement(candyBarSection)}>
                   <img src="https://wp.wedme.ro/wp-content/uploads/2020/06/Flavius-Partan-056.jpg"
                        alt="cake"/>
                   <div className="catalog-page__categories__element__category">
@@ -120,8 +123,12 @@ export default () => {
                      </div>
                   </div>
                </div>
+               <div className="catalog-page__products-showcase__candy-bar" ref={candyBarSection}>
+                  <CandyBar />
+               </div>
             </div>
          </div>
+         <Footer />
       </div>
    )
 }
