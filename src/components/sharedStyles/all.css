@@ -135,12 +135,12 @@ mark.orange {
   gap: 15rem;
   align-items: center;
   margin-top: 5rem;
-  padding-top: 5.5rem;
+  padding: 2rem 0 2rem 0;
 }
 .catalog-page__categories {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 60%;
   align-items: center;
   height: 100%;
   gap: 3rem;
@@ -152,13 +152,13 @@ mark.orange {
   align-items: center;
   min-width: 20rem;
   padding-top: 2rem;
-  margin-top: 5rem;
   box-shadow: 0 0.5rem 2rem rgba(4, 3, 3, 0.1019607843);
-  width: 15%;
-  height: 45%;
+  width: 22rem;
+  height: 21rem;
   transition: 0.3s;
-  animation-duration: 1s;
   cursor: pointer;
+  border-radius: 50%;
+  animation: slide_in 0.5s;
 }
 .catalog-page__categories__element__category {
   display: flex;
@@ -173,56 +173,60 @@ mark.orange {
 }
 .catalog-page__categories__element:hover {
   box-shadow: 0 0.5rem 2rem rgb(255, 210, 172);
+  margin-bottom: 2rem;
+}
+.catalog-page__categories__element:hover .catalog-page__categories__element__category__name {
+  color: #FD794F;
 }
 .catalog-page__categories__element img {
   width: 18rem;
-  height: 22rem;
-  border-radius: 0.5rem;
+  height: 18rem;
+  border-radius: 50%;
+}
+.catalog-page__products-showcase {
+  min-height: 50rem;
+  height: fit-content;
+  padding-top: 8rem;
 }
 .catalog-page__products-showcase__cakes {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   padding-bottom: 10rem;
+}
+.catalog-page__products-showcase__cakes__visible {
+  display: flex;
 }
 .catalog-page__products-showcase__cookies {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   padding-bottom: 10rem;
+}
+.catalog-page__products-showcase__cookies__visible {
+  display: flex;
 }
 .catalog-page__products-showcase__bakery {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   padding-bottom: 10rem;
 }
-.catalog-page__products-showcase__title {
+.catalog-page__products-showcase__bakery__visible {
   display: flex;
-  justify-content: center;
-  font-size: 3rem;
-  border-bottom: 1px;
-  font-family: "Open Sans", sans-serif;
-  margin: 0;
-  color: #424141;
-}
-.catalog-page__products-showcase__quote {
-  display: flex;
-  justify-content: center;
-  font-family: "Calligraffitti", cursive;
-  font-size: 3rem;
-  margin-top: 0;
-  color: #FD794F;
 }
 .catalog-page__products-showcase__ice-cream {
-  display: flex;
+  display: none;
   transition: 5s;
   height: 30rem;
   margin: 2rem 2rem;
   gap: 5rem;
+}
+.catalog-page__products-showcase__ice-cream__visible {
+  display: flex;
 }
 .catalog-page__products-showcase__ice-cream__info {
   display: flex;
@@ -253,9 +257,12 @@ mark.orange {
   border-radius: 4rem;
 }
 .catalog-page__products-showcase__candy-bar {
-  display: flex;
+  display: none;
   justify-content: center;
   height: 50rem;
+}
+.catalog-page__products-showcase__candy-bar__visible {
+  display: flex;
 }
 
 .horizontal-line {
@@ -281,10 +288,10 @@ mark.orange {
 
 @keyframes slide_in {
   from {
-    margin-top: 14rem;
+    margin-top: 5rem;
   }
   to {
-    margin-top: 2rem;
+    margin-top: 0;
   }
 }
 .cakes {
@@ -808,7 +815,7 @@ mark.orange {
   justify-content: center;
   align-items: flex-start;
   gap: 10rem;
-  height: 15rem;
+  height: 12rem;
   background-color: #504e4e;
   color: white;
   width: 100%;

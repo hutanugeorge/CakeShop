@@ -12,13 +12,13 @@ import TopArrowIcon from '../../icons/TopArrowIcon'
 
 export default () => {
 
-   const [showCakes, setShowCakes] = useState(false)
+   const [ showCakes, setShowCakes ] = useState(false)
+   const [ showCookies, setShowCookies ] = useState(false)
+   const [ showBakery, setShowBakery ] = useState(false)
+   const [ showIceCream, setShowIceCream ] = useState(false)
+   const [ showCandyBar, setShowCandyBar ] = useState(false)
 
-   const cakesSection = useRef(null)
-   const cookiesSection = useRef(null)
-   const bakerySection = useRef(null)
-   const iceCreamSection = useRef(null)
-   const candyBarSection = useRef(null)
+   const productsSection = useRef(null)
 
    const gotoElement = (section: any) => window.scrollTo({
       top: section.current && section.current.offsetTop,
@@ -49,20 +49,46 @@ export default () => {
          <div className="catalog-page">
             <div className="catalog-page__categories">
                <div className="catalog-page__categories__element"
-                    onClick={() => gotoElement(cakesSection)}>
+                    onClick={() => {
+                       setShowCakes(prev => !prev)
+                       setShowIceCream(false)
+                       setShowCandyBar(false)
+                       setShowBakery(false)
+                       setShowIceCream(false)
+                       {
+                          !showCakes ? gotoElement(productsSection) : null
+                       }
+                    }}>
                   <img src="./cake.avif" alt="cake image"/>
                   <div className="catalog-page__categories__element__category">
                      <p className="catalog-page__categories__element__category__name">Torturi</p>
                   </div>
                </div>
                <div className="catalog-page__categories__element"
-                    onClick={() => gotoElement(cookiesSection)}>
+                    onClick={() => {
+                       setShowCookies(prev => !prev)
+                       setShowIceCream(false)
+                       setShowCakes(false)
+                       setShowBakery(false)
+                       setShowCandyBar(false)
+                       {
+                          !showCookies ? gotoElement(productsSection) : null
+                       }
+                    }}>
                   <img src="./macarons.avif" alt="cake"/>
                   <div className="catalog-page__categories__element__category">
                      <p className="catalog-page__categories__element__category__name">Prajituri</p>
                   </div>
                </div>
-               <div className="catalog-page__categories__element" onClick={() => gotoElement(candyBarSection)}>
+               <div className="catalog-page__categories__element"
+                    onClick={() => {
+                       setShowCandyBar(prev => !prev)
+                       setShowCookies(false)
+                       setShowCakes(false)
+                       setShowBakery(false)
+                       setShowIceCream(false)
+                       !showCandyBar ? gotoElement(productsSection) : null
+                    }}>
                   <img src="https://wp.wedme.ro/wp-content/uploads/2020/06/Flavius-Partan-056.jpg"
                        alt="cake"/>
                   <div className="catalog-page__categories__element__category">
@@ -71,14 +97,28 @@ export default () => {
                   </div>
                </div>
                <div className="catalog-page__categories__element"
-                    onClick={() => gotoElement(bakerySection)}>
+                    onClick={() => {
+                       setShowBakery(prev => !prev)
+                       setShowCookies(false)
+                       setShowIceCream(false)
+                       setShowCandyBar(false)
+                       setShowCakes(false)
+                       !showBakery ? gotoElement(productsSection) : null
+                    }}>
                   <img src="./bakery.avif" alt="cake"/>
                   <div className="catalog-page__categories__element__category">
                      <p className="catalog-page__categories__element__category__name">Brutărie </p>
                   </div>
                </div>
                <div className="catalog-page__categories__element"
-                    onClick={() => gotoElement(iceCreamSection)}>
+                    onClick={() => {
+                       setShowIceCream(true)
+                       setShowCookies(false)
+                       setShowCakes(false)
+                       setShowBakery(false)
+                       setShowCandyBar(false)
+                       gotoElement(productsSection)
+                    }}>
                   <img
                      src="https://www.foodiecrush.com/wp-content/uploads/2017/05/No-Churn-Ice-Cream-foodiecrush.com-31.jpg"
                      alt="cake"/>
@@ -87,35 +127,23 @@ export default () => {
                   </div>
                </div>
             </div>
-            <div className="catalog-page__products-showcase">
-               <p className="catalog-page__products-showcase__title" ref={cakesSection}>Torturi</p>
-               <hr className="horizontal-line"/>
-               <p className="catalog-page__products-showcase__quote">O petrecere fara un tort este
-                  doar o
-                  intalnire!</p>
-               <div className="catalog-page__products-showcase__cakes">
+            <div className="catalog-page__products-showcase" ref={productsSection}>
+               <div
+                  className={`catalog-page__products-showcase__cakes ${showCakes ? 'catalog-page__products-showcase__cakes__visible' : ''}`}>
                   <CakesList/>
                </div>
-               <p className="catalog-page__products-showcase__title "
-                  ref={cookiesSection}>Prajituri</p>
-               <hr className="horizontal-line"/>
-               <p className="catalog-page__products-showcase__quote">Viata e scurta, asa ca
-                  indulceste-o!</p>
-               <div className="catalog-page__products-showcase__cookies">
+               <div
+                  className={`catalog-page__products-showcase__cookies ${showCookies ? 'catalog-page__products-showcase__cookies__visible' : ''}`}>
                   <CookiesList/>
                </div>
-               <p className="catalog-page__products-showcase__title"
-                  ref={bakerySection}>Brutarie</p>
-               <hr className="horizontal-line"/>
-               <p className="catalog-page__products-showcase__quote">Dragoste la prima
-                  muscatura!</p>
-               <div className="catalog-page__products-showcase__bakery">
+               <div
+                  className={`catalog-page__products-showcase__bakery ${showBakery ? 'catalog-page__products-showcase__bakery__visible' : ''}`}>
                   <BakeryList/>
                </div>
-               <div className="catalog-page__products-showcase__ice-cream">
+               <div
+                  className={`catalog-page__products-showcase__ice-cream ${showIceCream ? 'catalog-page__products-showcase__ice-cream__visible' : ''}`}>
                   <img src="./iceCream.png" alt="ice cream"/>
-                  <div className="catalog-page__products-showcase__ice-cream__info"
-                       ref={iceCreamSection}>
+                  <div className="catalog-page__products-showcase__ice-cream__info">
                      <p className="catalog-page__products-showcase__ice-cream__info__title">Inghetata</p>
                      <p className="catalog-page__products-showcase__ice-cream__info__message">Lorem
                         ipsum dolor
@@ -125,12 +153,13 @@ export default () => {
                      </div>
                   </div>
                </div>
-               <div className="catalog-page__products-showcase__candy-bar" ref={candyBarSection}>
-                  <CandyBar />
+               <div
+                  className={`catalog-page__products-showcase__candy-bar ${showCandyBar ? 'catalog-page__products-showcase__candy-bar__visible' : ''}`}>
+                  <CandyBar/>
                </div>
             </div>
          </div>
-         <Footer />
+         <Footer/>
       </div>
    )
 }
