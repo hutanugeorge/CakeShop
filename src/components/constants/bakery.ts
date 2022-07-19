@@ -4,6 +4,7 @@ export const bakeryArray = [
       price: 602,
       image: './index.jpg',
       info: {
+         price: 25,
          composition: ['123', '321'],
          recommendation: 'Recomandat pentru evenimente'
       }
@@ -13,6 +14,7 @@ export const bakeryArray = [
       price: 602,
       image: './index.jpg',
       info: {
+         price: 52,
          composition: ['123', '321'],
          recommendation: 'Recomandat pentru evenimente'
       }

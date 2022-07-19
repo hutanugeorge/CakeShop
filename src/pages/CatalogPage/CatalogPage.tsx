@@ -6,6 +6,7 @@ import CakesList from '../../components/Categories/Cakes/CakesList'
 import CandyBar from '../../components/Categories/CandyBar'
 import CookiesList from '../../components/Categories/Cookies/CookiesList'
 import Footer from '../../components/Footer'
+import ImageSlider from '../../components/ImageSlider'
 import NavBar from '../../components/NavBar/NavBar'
 import TopArrowIcon from '../../icons/TopArrowIcon'
 
@@ -19,6 +20,12 @@ export default () => {
    const [ showCandyBar, setShowCandyBar ] = useState(false)
 
    const productsSection = useRef(null)
+
+   const iceCreamImagesSlides = [
+      { url: './iceCream1.jpg', title: 'Pepene galben & Ciocolata' },
+      { url: './iceCream2.jpg', title: 'Pepene galben' },
+      { url: './iceCream3.jpg', title: 'Capsuni' }
+   ]
 
    const gotoElement = (section: any) => window.scrollTo({
       top: section.current && section.current.offsetTop,
@@ -142,14 +149,21 @@ export default () => {
                </div>
                <div
                   className={`catalog-page__products-showcase__ice-cream ${showIceCream ? 'catalog-page__products-showcase__ice-cream__visible' : ''}`}>
-                  <img src="./iceCream.png" alt="ice cream"/>
+                  <div className="catalog-page__products-showcase__ice-cream__image-slides">
+                     <ImageSlider slides={iceCreamImagesSlides}/>
+                  </div>
                   <div className="catalog-page__products-showcase__ice-cream__info">
-                     <p className="catalog-page__products-showcase__ice-cream__info__title">Inghetata</p>
-                     <p className="catalog-page__products-showcase__ice-cream__info__message">Lorem
-                        ipsum dolor
-                        sit amet, consectetur adipisicing elit. Dolor, ea?</p>
-                     <div className="catalog-page__products-showcase__ice-cream__info__flavours">
-
+                     <p className="catalog-page__products-showcase__ice-cream__info__title">Inghetata
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum laboriosam
+                        qui recusandae rem tenetur. Aut deserunt in laudantium numquam
+                        repellendus.</p>
+                     <div className="catalog-page__products-showcase__ice-cream__info__prices">
+                        <p className="catalog-page__products-showcase__ice-cream__info__prices__element">Cornet
+                           6 lei</p>
+                        <p className="catalog-page__products-showcase__ice-cream__info__prices__element">Pahar
+                           mic 8 lei</p>
+                        <p className="catalog-page__products-showcase__ice-cream__info__prices__element">Pahar
+                           mare 10 lei</p>
                      </div>
                   </div>
                </div>

@@ -5,12 +5,13 @@ import { cookiesArray } from '../../constants/cookies'
 
 export default () => {
    return <>
-      <div className="cookies-list">
-         {cookiesArray.map((cookie) => {
-            const { type, price, image, info: { composition, recommendation } } = cookie
-            return <Cookies type={type} price={`${price} ron/kg`} image={image}
+      <div className="category-list">
+         {cookiesArray.map((cookie, id) => {
+            const { type, image, info: { composition, recommendation, price } } = cookie
+            return <Cookies key={id} type={type} image={image}
                             info={<CookiesInfo composition={composition}
-                                               recommendation={recommendation}/>}/>
+                                               recommendation={recommendation}
+                                               price={`${price} ron/kg`}/>}/>
          })}
       </div>
 

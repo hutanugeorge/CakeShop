@@ -4,6 +4,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
+         price: 25,
          composition: [],
          recommendation: 'Recomandat pentru evenimente'
       }
@@ -13,6 +14,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
+         price: 24,
          composition: [],
          recommendation: 'Recomandat pentru evenimente'
       }

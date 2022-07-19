@@ -1,20 +1,21 @@
 import CakesInfo from '../../ProductsInfo/CakesInfo'
 import Cake from './Cakes'
-import {cakesArray} from "../../constants/cakes"
+import { cakesArray } from '../../constants/cakes'
 
 
 export default () =>
-    <div className={'cake-list'}>
-      {cakesArray.map((cake) => {
-         const {type, price, image, info: {composition, recommendation}} = cake
+   <div className="category-list">
+      {cakesArray.map((cake, id) => {
+         const { type, image, info: { composition, recommendation, price } } = cake
          return <Cake
-             type={type}
-             price={`${price} ron/KG`}
-             image={image}
-             info={<CakesInfo
-                 composition={composition}
-                 recommendation={recommendation}/>
-         }
+            key={id}
+            type={type}
+            image={image}
+            info={<CakesInfo
+               composition={composition}
+               recommendation={recommendation}
+               price={`${price} ron/kg`}/>
+            }
          />
       })}
    </div>

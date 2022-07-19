@@ -1,23 +1,10 @@
 .candy-bar {
   height: 100%;
+  width: 100rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3rem;
-
-  &__header {
-
-    &__title {
-      display: flex;
-      justify-content: center;
-      font-style: italic;
-      font-size: 3rem;
-      border-bottom: 1px;
-      font-family: 'Open Sans', sans-serif;
-      margin: 0;
-      color: #424141;
-    }
-  }
 
   &__description {
     font-size: 2rem;
@@ -31,14 +18,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
     width: 40rem;
-    flex-wrap: wrap;
-
-    & img {
-      border-radius: 5rem;
-      height: 6rem;
-      width: 6rem;
-    }
+    height: 25rem;
   }
 }

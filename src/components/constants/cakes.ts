@@ -1,94 +1,38 @@
 export const cakesArray = [
     {
         type: 'Tort insiropat',
-        price: 60,
-        image: './index.jpg',
+        image: './cake2.png',
+        info: {
+            composition: ['Lapte', 'Oua', 'Fructe', 'Bezea', 'Caramel'],
+            recommendation: 'Recomandat pentru evenimente',
+            price: 50
+        }
+    },
+    {
+        type: 'Tort insiropat',
+        image: 'cake2.png',
         info: {
             composition: ['123', '321'],
-            recommendation: 'Recomandat pentru evenimente'
-        }
-    },
-    {
-        type: 'Alt tort',
-        price: 600,
-        image: './index.jpg',
-        info: {
-            composition: [],
-            recommendation: 'Recomandat pentru zile de nastere'
+            recommendation: 'Recomandat pentru evenimente',
+            price: 50
         }
     },
     {
         type: 'Tort insiropat',
-        price: 60,
-        image: './index.jpg',
+        image: 'cake2.png',
         info: {
-            composition: [],
-            recommendation: 'Recomandat pentru evenimente'
+            composition: ['123', '321'],
+            recommendation: 'Recomandat pentru evenimente',
+            price: 50
         }
     },
     {
         type: 'Tort insiropat',
-        price: 60,
-        image: './index.jpg',
+        image: 'cake2.png',
         info: {
-            composition: [],
-            recommendation: 'Recomandat pentru evenimente'
-        }
-    },{
-        type: 'Tort insiropat',
-        price: 60,
-        image: './index.jpg',
-        info: {
-            composition: [],
-            recommendation: 'Recomandat pentru evenimente'
+            composition: ['123', '321'],
+            recommendation: 'Recomandat pentru evenimente',
+            price: 50
         }
     },
-    {
-        type: 'Tort insiropat',
-        price: 60,
-        image: './index.jpg',
-        info: {
-            composition: [],
-            recommendation: 'Recomandat pentru evenimente'
-        }
-    },
-    {
-        type: 'Tort insiropat',
-        price: 60,
-        image: './index.jpg',
-        info: {
-            composition: [],
-            recommendation: 'Recomandat pentru evenimente'
-        }
-    },
-    {
-        type: 'Tort insiropat',
-        price: 60,
-        image: './index.jpg',
-        info: {
-            composition: [],
-            recommendation: 'Recomandat pentru evenimente'
-        }
-    },
-    {
-        type: 'Tort insiropat',
-        price: 60,
-        image: './index.jpg',
-        info: {
-            composition: [],
-            recommendation: 'Recomandat pentru evenimente'
-        }
-    },
-    {
-        type: 'Tort insiropat',
-        price: 60,
-        image: './index.jpg',
-        info: {
-            composition: [],
-            recommendation: 'Recomandat pentru evenimente'
-        }
-    },
-
-
-
 ]

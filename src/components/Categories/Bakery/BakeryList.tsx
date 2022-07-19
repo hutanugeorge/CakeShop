@@ -1,20 +1,22 @@
 import BakeryInfo from '../../ProductsInfo/BakeryInfo'
-import Bakery from './index'
-import {bakeryArray} from '../../constants/bakery'
+import Bakery from './Bakery'
+import { bakeryArray } from '../../constants/bakery'
 
 
 export default () =>
-   <div className={'bakery-list'}>
-      {bakeryArray.map((pie) => {
-         const {type, price, image, info: {composition, recommendation}} = pie
+   <div className="category-list">
+      {bakeryArray.map((bakery, id) => {
+         const { type, image, info: { composition, recommendation, price } } = bakery
          return <Bakery
+            key={id}
             type={type}
-            price={`${price} ron/KG`}
             image={image}
             info={<BakeryInfo
                composition={composition}
-               recommendation={recommendation}/>
+               recommendation={recommendation}
+               price={`${price} ron/kg`}/>
             }
          />
       })}
    </div>
+

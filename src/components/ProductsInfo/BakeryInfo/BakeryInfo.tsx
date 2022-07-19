@@ -3,10 +3,10 @@ import BakeryProps from './interface'
 
 
 export default ({ composition, recommendation }: BakeryProps) => {
-   return <div className="bakery-info">
+   return <div className="product-info">
       <div className="bakery-info__details">
-         {composition.map(ingredient => {
-            return <ul className="bakery-info__details__composition">
+         {composition.map((ingredient, id) => {
+            return <ul key={id} className="bakery-info__details__composition">
                <li><CheckIcon/>{ingredient}</li>
             </ul>
          })}
