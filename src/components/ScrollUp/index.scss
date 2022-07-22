@@ -1,0 +1,16 @@
+.scroll-up-button {
+  position: fixed;
+  display: none;
+  left: 95%;
+  top: 10%;
+  cursor: pointer;
+
+  &__visible {
+    display: unset;
+  }
+
+  & svg {
+    color: #FD794F;
+
+  }
+}

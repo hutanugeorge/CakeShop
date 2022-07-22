@@ -4,7 +4,7 @@ import RightArrowIcon from '../../icons/RightArrowIcon'
 import SliderProps from './interface'
 
 
-export default (slides : SliderProps[]) => {
+export default ({ slides }: any) => {
 
    const [ currentIndex, setCurrentIndex ] = useState<number>(0)
 
