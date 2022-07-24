@@ -1,4 +1,7 @@
-.nav-bar {
+@import '../../sharedStyles/utils/variables';
+@import '../../sharedStyles/utils/mixins';
+
+.nav-bar__desktop {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ccc;
@@ -9,18 +12,32 @@
   top: 0;
   z-index: 1000;
 
-  &__logo {
+  @include respond($tablet-portrait) {
+    display: none;
+  }
+
+  &__shop-name {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 2.5rem;
+    margin-left: 1rem;
     cursor: pointer;
+    font-family: Merienda, serif;
+    font-style: italic;
+    color: #FD794F;
   }
 
   &__menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
     gap: 10rem;
     height: 3.5rem;
     list-style: none;
+    width: 100%;
 
     &__item {
       font-weight: 500;
@@ -32,7 +49,7 @@
       text-decoration: none;
 
       &:hover, &--active {
-        color: #f67715;
+        color: #FD794F;
         font-size: 1.45rem;
       }
     }

@@ -1,0 +1,75 @@
+@import '../../sharedStyles/utils/variables';
+@import '../../sharedStyles/utils/mixins';
+
+.nav-bar__mobile {
+  background-color: #F8FAFB;
+  opacity: 0.9;
+  display: none;
+
+  @include respond($phone) {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    height: 5rem;
+    z-index: 5;
+    width: 100vw;
+
+    &__shop-name {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 12rem;
+      height: 100%;
+      margin: 0 0 0 1rem;
+      font-size: 1.7rem;
+      cursor: pointer;
+      font-family: Merienda, serif;
+      font-style: italic;
+      color: #FD794F;
+      }
+
+    &__dropdown {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      height: 100%;
+
+      &__menu {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+      }
+
+      &__links {
+        display: flex;
+        position: absolute;
+        top: -100rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(66, 64, 64, 0.5);
+        transition: .5s;
+        width: 100%;
+        gap: 5rem;
+        height: 100vh;
+
+        &--visible {
+          color: white;
+          transition: .5s;
+          top: 5rem;
+          width: 100%;
+          backdrop-filter: blur(5px);
+        }
+
+        &__link > p {
+          font-size: 2rem;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
