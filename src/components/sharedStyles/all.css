@@ -862,7 +862,7 @@ mark.orange {
   .nav-bar__mobile__dropdown__links {
     display: flex;
     position: absolute;
-    top: -100rem;
+    top: 100rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -873,15 +873,21 @@ mark.orange {
     height: 100vh;
   }
   .nav-bar__mobile__dropdown__links--visible {
-    color: white;
+    background-color: black;
+    opacity: 0.6;
     transition: 0.5s;
     top: 5rem;
     width: 100%;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
   }
-  .nav-bar__mobile__dropdown__links__link > p {
+  .nav-bar__mobile__dropdown__links__link {
     font-size: 2rem;
+    color: white;
     margin: 0;
+  }
+  .nav-bar__mobile__dropdown__links__link--active {
+    font-size: 2rem;
+    color: #FD794F;
   }
 }
 

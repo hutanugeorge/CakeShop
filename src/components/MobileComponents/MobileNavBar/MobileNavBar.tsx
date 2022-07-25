@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, NavLink } from 'react-router-dom'
 import MenuIcon from '../../../icons/MenuIcon'
 
 
@@ -11,27 +11,30 @@ export default () => {
 
    return <>
       <div className={`nav-bar__mobile ${open ? 'nav-bar__mobile__blur' : ''}`}>
-         <p className="nav-bar__mobile__shop-name">
+         <p className="nav-bar__mobile__shop-name" onClick={() => navigate('/')}>
             Cofetaria Acasa
          </p>
-         <div className="nav-bar__mobile__dropdown" onClick={() => setOpen(prev => !prev)}>
-            <div className="nav-bar__mobile__dropdown__menu">
+         <div className="nav-bar__mobile__dropdown">
+            <div className="nav-bar__mobile__dropdown__menu" onClick={() => setOpen(prev => !prev)}>
                <MenuIcon/>
             </div>
             <div
                className={`nav-bar__mobile__dropdown__links ${open ? 'nav-bar__mobile__dropdown__links--visible' : ''}`}>
-               <div className="nav-bar__mobile__dropdown__links__link">
-                  <p>Acasa</p>
-                  <hr/>
-               </div>
-               <div className="nav-bar__mobile__dropdown__links__link">
-                  <p>Catalog</p>
-                  <hr/>
-               </div>
-               <div className="nav-bar__mobile__dropdown__links__link">
-                  <p>Despre noi</p>
-                  <hr/>
-               </div>
+               <NavLink
+                  className={({ isActive }) => isActive ? 'nav-bar__mobile__dropdown__links__link' + ' nav-bar__mobile__dropdown__links__link--active' : 'nav-bar__mobile__dropdown__links__link'}
+                  to={'/'}>
+                  Acasa
+               </NavLink>
+               <NavLink
+                  className={({ isActive }) => isActive ? 'nav-bar__mobile__dropdown__links__link' + ' nav-bar__mobile__dropdown__links__link--active' : 'nav-bar__mobile__dropdown__links__link'}
+                  to={'/catalog'}>
+                  Catalog
+               </NavLink>
+               <NavLink
+                  className={({ isActive }) => isActive ? 'nav-bar__mobile__dropdown__links__link' + ' nav-bar__mobile__dropdown__links__link--active' : 'nav-bar__mobile__dropdown__links__link'}
+                  to={'/about-us'}>
+                  Despre noi
+               </NavLink>
             </div>
          </div>
       </div>
