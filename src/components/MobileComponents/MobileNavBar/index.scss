@@ -6,7 +6,7 @@
   opacity: 0.9;
   display: none;
 
-  @include respond($phone) {
+  @include respond($tablet-landscape) {
     display: flex;
     justify-content: space-between;
     position: fixed;

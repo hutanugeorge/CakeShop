@@ -1,3 +1,6 @@
+@import '../sharedStyles/utils/mixins';
+@import '../sharedStyles/utils/variables';
+
 .footer {
   display: flex;
   justify-content: center;
@@ -103,4 +106,10 @@
 
 .link {
   cursor: pointer;
+}
+
+@include respond($tablet-landscape) {
+  .footer {
+    display: none;
+  }
 }

@@ -12,11 +12,11 @@ export default () => {
    },[])
 
    return (
-      <div className="landing-page__wrapper">
+      <>
          <NavBar/>
         <MidSection />
-         <Footer />
-      </div>
+         {/*<Footer />*/}
+      </>
 
    )
 }

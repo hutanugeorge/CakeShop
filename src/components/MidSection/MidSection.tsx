@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom'
+import CakesBG from '../../icons/CakesBG'
 import CheckIcon from '../../icons/CheckIcon'
 
 
@@ -8,14 +9,11 @@ export default () => {
 
    return <div className="landing-page">
       <div className="landing-page__left-section">
-         <div className="landing-page__left-section__description">
-            <p className="landing-page__left-section__description__quote">
+         <p className="landing-page__left-section__description">
                Toate te duc cu gândul <mark className="orange">acasă</mark>!
-            </p>
-            <p className="landing-page__left-section__description__content">
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam eaque id
-               molestiae quaerat quos reprehenderit veniam. Asperiores officiis quas ratione?
-            </p>
+         </p>
+         <div className="landing-page__left-section__cakes-background">
+            <CakesBG />
          </div>
          <div className="landing-page__left-section__cake-images">
             <img src="./cake1.webp" alt="Cake"/>
