@@ -594,28 +594,39 @@
   .landing-page__left-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
-    height: 30rem;
-    padding: 2rem 0 0 0;
+    height: 100%;
+    padding: 0;
   }
   .landing-page__left-section__description {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    width: 100%;
+    height: 60%;
+    margin: 0;
+    background-image: url("https://i.ytimg.com/vi/utdy3F-go_Q/maxresdefault.jpg");
+  }
+  .landing-page__left-section__description p {
     text-align: center;
-    font-style: italic;
     font-size: 3rem;
     width: 100%;
     margin: 0;
+    background-color: white;
+    border-right: 1rem transparent;
+    mix-blend-mode: screen;
   }
-  .landing-page__left-section__cakes-background {
-    display: block;
-    width: 100%;
-    height: 10rem;
-    overflow: hidden;
+  .landing-page__left-section__description svg {
+    position: absolute;
+    top: 99%;
   }
-  .landing-page__left-section__cakes-background svg {
-    height: 10rem;
-    width: 100%;
+  .landing-page__left-section__description svg path {
+    color: #FD794F;
   }
   .landing-page__left-section__cake-images {
     display: flex;
@@ -623,23 +634,38 @@
     gap: 3rem;
   }
   .landing-page__left-section__cake-images img {
+    border: 2px solid #FD794F;
     width: 4rem;
     height: 4rem;
   }
   .landing-page__right-section {
     display: flex;
     justify-content: flex-start;
+    flex-direction: column;
     width: 100%;
     padding: 0;
   }
   .landing-page__right-section__features {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .landing-page__right-section__features__feature {
+    margin: 0;
+    font-size: 1.7rem;
+    padding: 1rem 0 0 1rem;
+  }
+  .landing-page__right-section__features__feature svg {
+    color: #FD794F;
+    width: 1.7rem;
+    height: 1.7rem;
   }
   .landing-page__right-section__explore {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 10rem;
   }
   .landing-page__right-section__explore__explore-button {
     height: 4rem;

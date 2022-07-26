@@ -9,11 +9,8 @@ export default () => {
 
    return <div className="landing-page">
       <div className="landing-page__left-section">
-         <p className="landing-page__left-section__description">
-               Toate te duc cu gândul <mark className="orange">acasă</mark>!
-         </p>
-         <div className="landing-page__left-section__cakes-background">
-            <CakesBG />
+         <div className="landing-page__left-section__description">
+            <p>Toate te duc cu gândul Acasă!</p>
          </div>
          <div className="landing-page__left-section__cake-images">
             <img src="./cake1.webp" alt="Cake"/>
