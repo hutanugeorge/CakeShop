@@ -1,3 +1,6 @@
+@import '../../components/sharedStyles/utils/variables';
+@import '../../components/sharedStyles/utils/mixins';
+
 .catalog-page {
   background-color: #f3f5f7;
   display: flex;
@@ -13,55 +16,21 @@
     width: 60%;
     align-items: center;
     height: 100%;
-    gap: 3rem;
+    gap: 5rem;
     flex-wrap: wrap;
+  }
+}
 
+@include respond($tablet-portrait) {
+  .catalog-page {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
 
-    &__element {
-      position: relative;
+    &__categories {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-width: 20rem;
-      justify-content: center;
-      padding-top: 2rem;
-      box-shadow: 0 .5rem .5rem #0403031a;
-      width: 21rem;
-      height: 20rem;
-      transition: .3s;
-      cursor: pointer;
-      border-radius: 50%;
-      animation: slide_in .5s;
-
-      &__category {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-
-        &__name {
-          position: absolute;
-          top: 100%;
-          margin: 0;
-          color: #5c4a4a;
-          font-size: 1.8rem;
-        }
-      }
-
-      &:hover {
-        box-shadow: 0 .5rem .5rem rgb(255, 210, 172);
-        margin-bottom: 2rem;
-
-        .catalog-page__categories__element__category__name {
-          color: #FD794F;
-        }
-      }
-
-      & img {
-        width: 18rem;
-        height: 18rem;
-        border-radius: 50%;
-      }
+      flex-direction: row;
+      width: 100%;
     }
   }
 }

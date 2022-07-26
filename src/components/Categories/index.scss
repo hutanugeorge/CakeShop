@@ -1,6 +1,10 @@
+@import '../../components/sharedStyles/utils/variables';
+@import '../../components/sharedStyles/utils/mixins';
+
 .category {
   display: flex;
-  width: 20rem;
+  width: fit-content;
+  height: 20rem;
   justify-content: center;
 
 
@@ -10,7 +14,6 @@
     align-items: center;
     flex-direction: column;
     height: 26rem;
-    width: 20rem;
     transition: .5s;
     background-color: transparent;
 
@@ -142,6 +145,23 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 5rem;
+}
+
+@include respond($phone) {
+  .category__container__primary-info__image__wrapper__card {
+    width: 8rem;
+    height: 10rem;
+  }
+
+  .category__container__primary-info__type {
+    font-size: 1.4rem;
+    margin: .5rem 0 .2rem 0;
+  }
+
+  .category__container__primary-info__button {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
 
 

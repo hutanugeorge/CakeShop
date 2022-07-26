@@ -62,12 +62,12 @@ export default () => {
      },
      {
       name: Products.COOKIES,
-      image: 'cake2.webp',
+      image: 'cake1.webp',
       show: () => showProducts(Products.COOKIES)
     },
      {
       name: Products.BAKERY,
-      image: 'cake3.webp',
+      image: 'cake1.webp',
       show: () => showProducts(Products.BAKERY)
     },
      {

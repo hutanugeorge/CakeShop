@@ -17,7 +17,6 @@ export default () => {
             <img src="./cake2.jpg" alt="Cake"/>
             <img src="./cake3.jpg" alt="Cake"/>
          </div>
-
       </div>
       <div className="landing-page__middle-section">
          <img src="Cheesecake.jpg" alt="cheesecake"/>

@@ -3,7 +3,6 @@ import CakesList from '../Categories/Cakes/CakesList'
 import CandyBar from '../Categories/CandyBar'
 import CookiesList from '../Categories/Cookies/CookiesList'
 import ImageSlider from '../ImageSlider'
-import SliderProps from '../ImageSlider/interface'
 import ScrollUp from '../ScrollUp'
 import ProductsProps from './interface'
 
