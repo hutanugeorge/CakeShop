@@ -4,73 +4,45 @@ import InstagramIcon from '../../icons/InstagramIcon'
 import MailIcon from '../../icons/MailIcon'
 import PhoneIcon from '../../icons/PhoneIcon'
 import PinIcon from '../../icons/PinIcon'
+import RightArrowIcon from '../../icons/RightArrowIcon'
 
 
 export default () => {
    return <div className="about-us__wrapper">
       <NavBar/>
       <div className="about-us">
-         <div className="about-us__left-section">
-            <p className="about-us__left-section__title">Serviciile noastre</p>
-            <hr className="about-us__horizontal-line"/>
-            <div className="about-us__left-section__content">
-               <p className="about-us__left-section__content__element">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos,
-                  praesentium.
-               </p>
-               <p className="about-us__left-section__content__element">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis distinctio
-                  facilis tempora tenetur velit voluptatem.
-               </p>
-               <p className="about-us__left-section__content__element">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at earum enim
-                  explicabo, fugiat fugit iusto sapiente voluptatum? Expedita facere itaque nemo
-                  quas recusandae! Sequi.
-               </p>
-               <p className="about-us__left-section__content__element">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius repellendus
-                  sapiente sit! Beatae consequuntur earum hic, ipsam ipsum suscipit vitae.
-                  Aspernatur earum eos quas ullam!
-               </p>
-            </div>
-         </div>
-         <div className="about-us__middle-section">
-            <div className="about-us__middle-section__group-photo">
-               <img src="./groupPhoto.jpg" alt="photo"/>
-            </div>
-            <div className="about-us__middle-section__our-story">
-               <p className="about-us__middle-section__our-story__title"> Povestea noastra</p>
-               <hr className="about-us__horizontal-line"/>
-               <p className="about-us__middle-section__our-story__story">Lorem ipsum dolor sit amet,
-                  consectetur
-                  adipisicing elit. Adipisci amet architecto commodi corporis culpa dolores esse
-                  expedita officia, quaerat quo repellendus reprehenderit suscipit veniam? Aperiam
-                  atque, autem delectus eveniet maxime natus possimus voluptas. Accusantium
-                  architecto,
-                  consectetur delectus dolorum et, explicabo laboriosam modi numquam provident quis
-                  sapiente similique unde veritatis. Delectus.</p>
-            </div>
-         </div>
-         <div className="about-us__right-section">
-            <div className="about-us__right-section__contact">
-               <div className="about-us__right-section__contact__list">
-                  <p className="about-us__right-section__contact__list__element">
-                     <PhoneIcon/> +40758481842</p>
-                  <p className="about-us__right-section__contact__list__element">
-                     <MailIcon/> cofetaria-acasa@gmail.com</p>
-                  <p className="about-us__right-section__contact__list__element"><PinIcon/> Str.
-                     Carol I, Bl.
-                     F12, Târgu Ocna</p>
-                  <div className="about-us__right-section__contact__list__social">
-                     <p className="about-us__right-section__contact__list__social__element" onClick={() => window.open('https://www.facebook.com/Cofetaria-Acasa-Targu-Ocna-101771164709091')}>
-                        <FacebookIcon fill={'black'}/>
-                     </p>
-                     <p className="about-us__right-section__contact__list__social__element" onClick={() => window.open('https://www.instagram.com/claudiabranzaru/')}>
-                        <InstagramIcon fill={'black'}/>
-                     </p>
+         <div className="about-us__information">
+            <div className="about-us__information__sections">
+               <div className="about-us__information__sections__section">
+                  <div className="about-us__information__sections__section__arrow">
+                     <RightArrowIcon/>
                   </div>
+                  <p className="about-us__information__sections__section__title">
+                     Informatii despre comenzi
+                  </p>
+               </div>
+               <div className="about-us__information__sections__section">
+                  <div className="about-us__information__sections__section__arrow">
+                     <RightArrowIcon/>
+                  </div>
+                  <p className="about-us__information__sections__section__title">
+                     Povestea Noastra
+                  </p>
+               </div>
+               <div className="about-us__information__sections__section">
+                  <div className="about-us__information__sections__section__arrow">
+                     <RightArrowIcon/>
+                  </div>
+                  <p className="about-us__information__sections__section__title">
+                     Contact
+                  </p>
                </div>
             </div>
+         </div>
+         <div className="about-us__group-photo">
+            <img
+               src="https://media.istockphoto.com/photos/group-multiracial-people-having-fun-outdoor-happy-mixed-race-friends-picture-id1211345565?k=20&m=1211345565&s=612x612&w=0&h=Gg65DvzedP7YDo6XFbB-8-f7U7m5zHm1OPO3uIiVFgo="
+               alt="group photo"/>
          </div>
       </div>
    </div>
