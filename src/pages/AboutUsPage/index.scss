@@ -92,8 +92,8 @@
 
 @include respond($tablet-landscape) {
   .about-us {
-    height: 100vh;
-    padding-top: 5rem;
+    position: relative;
+    height: 100%;
 
     &__group-photo {
       display: flex;

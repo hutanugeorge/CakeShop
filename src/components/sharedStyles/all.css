@@ -112,8 +112,8 @@
 
 @media (any-hover: none), (max-width: 75em) {
   .about-us {
-    height: 100vh;
-    padding-top: 5rem;
+    position: relative;
+    height: 100%;
   }
   .about-us__group-photo {
     display: flex;
