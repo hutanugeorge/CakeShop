@@ -1,23 +1,26 @@
+@import '../../components/sharedStyles/utils/variables';
+@import '../../components/sharedStyles/utils/mixins';
+
 .about-us {
   background-color: #f3f5f7;
-  padding: 5.5rem 15rem 0 15rem;
+  padding-top: 1rem;
+  gap: 2rem;
   margin-top: 5rem;
   position: absolute;
+  flex-direction: column;
   inset: 0;
   display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-
-  & svg {
-    width: 100rem;
-  }
-
+  align-items: center;
+  justify-content: center;
 
   &__information {
+    width: 100%;
+    height: 100%;
 
     &__sections {
+      width: 100%;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       gap: 1rem;
 
       &__section {
@@ -25,20 +28,39 @@
         display: flex;
         border-radius: 1rem;
         background-color: white;
-
-        &__title {
-          margin: .5rem;
-          font-size: 2rem;
-          color: #494949;
-        }
+        transition: .5s;
+        width: 30rem;
+        height: 100%;
+        min-height: 20rem;
 
         &__arrow {
           display: flex;
-          align-items: center;
+          align-items: flex-start;
+          margin-top: .2rem;
 
           & svg {
             width: 3rem;
             height: 3rem;
+          }
+        }
+
+        &__container {
+          display: flex;
+          flex-direction: column;
+
+          &__title {
+            display: flex;
+            margin: .5rem;
+            font-size: 2rem;
+            color: #494949;
+          }
+
+          &__details {
+
+            & p {
+              font-size: 1.3rem;
+              margin-right: 1rem;
+            }
           }
         }
       }
@@ -48,8 +70,69 @@
   &__group-photo {
 
     & img {
-      border-radius: 1rem;
+      width: 100%;
+      height: 100%;
+      border-radius: 10rem 10rem 1rem 1rem;
     }
   }
+}
 
+
+.info {
+  display: none;
+
+
+  &__info-visible {
+    position: absolute;
+    top: 64%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@include respond($tablet-landscape) {
+  .about-us {
+    height: 100vh;
+    padding-top: 5rem;
+
+    &__group-photo {
+      display: flex;
+      justify-content: center;
+
+      & img {
+        width: 95%;
+        height: 95%;
+      }
+    }
+
+    &__information {
+      width: 95%;
+
+      &__sections {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+
+        &__section {
+          min-height: 10rem;
+          width: 100%;
+
+          &__container {
+
+            &__title {
+              font-size: 1.5rem;
+            }
+
+            &__details {
+
+              & p {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
