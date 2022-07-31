@@ -34,10 +34,10 @@ export default () => {
     setShowCandyBar(false)
      switch (category) {
         case Products.CAKES:
-            setShowCookies(true)
+            setShowCakes(true)
             break
         case Products.COOKIES:
-            setShowCakes(true)
+            setShowCookies(true)
             break
         case Products.CANDY_BAR:
             setShowCandyBar(true)
@@ -108,7 +108,6 @@ export default () => {
                showCandyBar={showCandyBar}/>}
             </div>
          </div>
-         <Footer/>
       </div>
    )
 }

@@ -1,4 +1,7 @@
-.product-info  {
+@import '../../components/sharedStyles/utils/variables';
+@import '../../components/sharedStyles/utils/mixins';
+
+.product-info {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -16,7 +19,7 @@
 
     &__price {
       display: flex;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       margin-top: 0;
     }
 
@@ -38,7 +41,6 @@
     }
 
     &__recommendation {
-      color: #504e4e;
       width: 100%;
     }
   }
@@ -46,6 +48,51 @@
   & svg {
     width: 1.5rem;
     height: 1.5rem;
+  }
+}
+
+@include respond($tablet-landscape) {
+  .product-info {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__details {
+      gap: 3rem;
+      width: fit-content;
+
+      &__price {
+        justify-content: center;
+      }
+
+      &__composition {
+        display: flex;
+        flex-direction: column;
+
+        &__wrapper {
+          height: 8rem;
+          width: fit-content;
+          display: flex;
+          gap: 1rem;
+          flex-direction: column;
+          flex-wrap: wrap;
+
+        }
+
+        & div {
+          display: flex;
+
+          & p {
+            margin: 0;
+          }
+        }
+      }
+
+      &__recommendation {
+        margin: 0;
+      }
+    }
   }
 }
 

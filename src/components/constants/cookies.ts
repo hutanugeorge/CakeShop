@@ -5,8 +5,8 @@ export const cookiesArray = [
       image: './index.jpg',
       info: {
          price: 25,
-         composition: [],
-         recommendation: 'Recomandat pentru evenimente'
+         composition: ['Lapte', 'Oua', 'Branza', 'Lapte', 'Oua', 'Branza', 'Lapte', 'Oua', 'Branza'],
+         recommendation: '*Recomandat pentru evenimente'
       }
    },
    {
@@ -15,7 +15,7 @@ export const cookiesArray = [
       image: './index.jpg',
       info: {
          price: 24,
-         composition: [],
+         composition: ['Lapte', 'Oua', 'Branza', 'Lapte', 'Oua', 'Branza', 'Lapte', 'Oua', 'Branza'],
          recommendation: 'Recomandat pentru evenimente'
       }
    },

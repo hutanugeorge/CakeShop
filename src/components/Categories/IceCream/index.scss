@@ -70,13 +70,17 @@
     &__image-slides {
       margin: 0;
       height: 20rem;
+      width: 50%;
     }
 
     &__info {
+      display: flex;
+      justify-content: flex-start;
       width: 55%;
-      height: 40%;
+      height: 100%;
 
       &__title {
+        height: fit-content;
         font-size: 1.2rem;
       }
 

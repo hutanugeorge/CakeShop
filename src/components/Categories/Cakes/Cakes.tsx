@@ -22,10 +22,9 @@ export default ({ type, image, info }: CakeProps) => {
                         <img src={image} alt="photo"/>
                         <div
                            className="category__container__primary-info__image__wrapper__card__descriptions">
-                           <h1>Lorem ipsum.</h1>
+                           <h1>Lorem ipsum.dsa</h1>
                            <p>
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod,
-                              voluptates? </p>
+                              {info} </p>
                         </div>
                      </div>
                   </div>
@@ -33,25 +32,17 @@ export default ({ type, image, info }: CakeProps) => {
                <p className="category__container__primary-info__type"
                   onClick={() => setVisibleProducts(prev => !prev)}>{type}</p>
             </div>
-            <div
-               className={`category__container__info ${visibleProducts ? 'category__container__info-visible' : ''}`}>
-               {info}
-            </div>
          </div>
       </div>
       <div className={`mobile-info ${ visibleInfo ? 'mobile-info__visible': ''}`} onClick={ (e) => e.stopPropagation()}>
          <div className="mobile-info__header">
             <p className="mobile-info__header__title">
-               Tort Insiropat
-            </p>
-            <p className="mobile-info__header__price">
-               60ron/kg
+               {type}
             </p>
          </div>
          <div className="mobile-info__body">
             <p className="mobile-info__body__info">
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at culpa dolorum ipsum
-               iusto libero magnam mollitia odit quia reprehenderit.
+               {info}
             </p>
             <div className="mobile-info__body__image">
                <img src={image} alt='cake image' />

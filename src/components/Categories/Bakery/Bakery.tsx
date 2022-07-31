@@ -33,25 +33,17 @@ export default ({ type, image, info }: BakeryProps) => {
                <p className="category__container__primary-info__type"
                   onClick={() => setVisibleProducts(prev => !prev)}>{type}</p>
             </div>
-            <div
-               className={`category__container__info ${visibleProducts ? 'category__container__info-visible' : ''}`}>
-               {info}
-            </div>
          </div>
       </div>
       <div className={`mobile-info ${ visibleInfo ? 'mobile-info__visible': ''}`} onClick={ (e) => e.stopPropagation()}>
          <div className="mobile-info__header">
             <p className="mobile-info__header__title">
-               Cozonac
-            </p>
-            <p className="mobile-info__header__price">
-               60ron/kg
+               {type}
             </p>
          </div>
          <div className="mobile-info__body">
             <p className="mobile-info__body__info">
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at culpa dolorum ipsum
-               iusto libero magnam mollitia odit quia reprehenderit.
+               {info}
             </p>
             <div className="mobile-info__body__image">
                <img src={image} alt='cake image' />

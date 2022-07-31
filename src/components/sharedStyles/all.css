@@ -203,12 +203,16 @@
   .ice-cream__image-slides {
     margin: 0;
     height: 20rem;
+    width: 50%;
   }
   .ice-cream__info {
+    display: flex;
+    justify-content: flex-start;
     width: 55%;
-    height: 40%;
+    height: 100%;
   }
   .ice-cream__info__title {
+    height: fit-content;
     font-size: 1.2rem;
   }
   .ice-cream__info__prices__element {
@@ -238,6 +242,28 @@
   height: 25rem;
 }
 
+@media (any-hover: none), (max-width: 75em) {
+  .candy-bar {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 20rem;
+    margin: 0.5rem;
+  }
+  .candy-bar__description {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+  .candy-bar__image {
+    display: flex;
+    justify-content: center;
+  }
+  .candy-bar__image img {
+    border-radius: 1rem;
+    width: 20rem;
+    height: 12rem;
+  }
+}
 .footer {
   display: flex;
   justify-content: center;
@@ -471,6 +497,7 @@
   }
   .mobile-info__header {
     width: 100%;
+    height: 10%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -479,14 +506,9 @@
     color: white;
     font-size: 2rem;
   }
-  .mobile-info__header__price {
-    color: white;
-    font-size: 1.7rem;
-    margin: 0;
-  }
   .mobile-info__body {
     height: fit-content;
-    margin: 2rem 1rem;
+    margin: 0 1rem;
   }
   .mobile-info__body__info {
     font-size: 1.3rem;
@@ -534,7 +556,7 @@
 }
 .product-info__details__price {
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-top: 0;
 }
 .product-info__details__composition {
@@ -553,7 +575,6 @@
   font-style: italic;
 }
 .product-info__details__recommendation {
-  color: #504e4e;
   width: 100%;
 }
 .product-info svg {
@@ -561,6 +582,42 @@
   height: 1.5rem;
 }
 
+@media (any-hover: none), (max-width: 75em) {
+  .product-info {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .product-info__details {
+    gap: 3rem;
+    width: fit-content;
+  }
+  .product-info__details__price {
+    justify-content: center;
+  }
+  .product-info__details__composition {
+    display: flex;
+    flex-direction: column;
+  }
+  .product-info__details__composition__wrapper {
+    height: 8rem;
+    width: fit-content;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .product-info__details__composition div {
+    display: flex;
+  }
+  .product-info__details__composition div p {
+    margin: 0;
+  }
+  .product-info__details__recommendation {
+    margin: 0;
+  }
+}
 .image-slider {
   width: 100%;
   height: 100%;
@@ -618,6 +675,7 @@
   .image-slider {
     width: 10rem;
     height: 20rem;
+    margin: auto;
   }
   .image-slider__arrow {
     display: none;
@@ -865,7 +923,7 @@ mark.orange {
 .products-showcase__ice-cream {
   display: none;
   height: 40rem;
-  width: 100%;
+  width: 60rem;
   margin: 2rem 2rem;
   gap: 1rem;
   justify-content: flex-start;
@@ -887,6 +945,7 @@ mark.orange {
   .products-showcase__ice-cream {
     margin: 0;
     height: fit-content;
+    width: 100%;
   }
 }
 .categories {

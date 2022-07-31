@@ -46,7 +46,7 @@
   &__ice-cream {
     display: none;
     height: 40rem;
-    width: 100%;
+    width: 60rem;
     margin: 2rem 2rem;
     gap: 1rem;
     justify-content: flex-start;
@@ -75,6 +75,7 @@
     &__ice-cream {
       margin: 0;
       height: fit-content;
+      width: 100%;
 
       &__visible {
       }

@@ -1,3 +1,6 @@
+@import '../../sharedStyles/utils/variables';
+@import '../../sharedStyles/utils/mixins';
+
 .candy-bar {
   height: 100%;
   width: 100rem;
@@ -20,5 +23,33 @@
     align-items: center;
     width: 40rem;
     height: 25rem;
+  }
+}
+
+@include respond($tablet-landscape) {
+  .candy-bar {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 20rem;
+    margin: 0.5rem;
+
+    &__description {
+      font-size: 1.3rem;
+      width: 100%;
+    }
+
+    &__image {
+      display: flex;
+      justify-content: center;
+
+      & img {
+        border-radius: 1rem;
+        width: 20rem;
+        height: 12rem;
+
+      }
+
+    }
   }
 }
