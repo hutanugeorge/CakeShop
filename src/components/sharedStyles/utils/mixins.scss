@@ -3,28 +3,34 @@
 
 @mixin respond($size, $length: 0) {
   @if $size == $mini-phone {
-    @media (any-hover: none), (max-width: $mini-phone) {
+    @media  (max-width: $mini-phone) {
       @content;
     }
   }
   @if $size == $phone {
-    @media (any-hover: none), (max-width: $phone) {
+    @media (max-width: $phone) {
       @content;
     }
   }
   @if $size == $tablet-portrait {
-    @media (any-hover: none), (max-width: $tablet-portrait) {
+    @media (max-width: $tablet-portrait) {
       @content;
     }
   }
   @if $size == $tablet-landscape {
-    @media (any-hover: none), (max-width: $tablet-landscape) {
+    @media (max-width: $tablet-landscape) {
       @content;
     }
   }
   @if $size == $large-desktop {
     @media (min-width: $large-desktop) {
       @content;
+    }
+  }
+
+  @if $size == 68em {
+    @media(max-width: 68em) {
+      @content
     }
   }
 }

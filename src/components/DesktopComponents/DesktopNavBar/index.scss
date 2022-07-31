@@ -60,3 +60,13 @@
     height: 3rem;
   }
 }
+
+@include respond(68em) {
+  .nav-bar__desktop {
+
+    &__menu {
+      justify-content: flex-end;
+      margin-right: 1rem;
+    }
+  }
+}

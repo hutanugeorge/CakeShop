@@ -19,7 +19,7 @@
   flex-wrap: wrap;
 }
 
-@media (any-hover: none), (max-width: 56em) {
+@media (max-width: 56em) {
   .catalog-page {
     display: flex;
     flex-direction: column;
@@ -110,7 +110,7 @@
   justify-content: center;
 }
 
-@media (any-hover: none), (max-width: 75em) {
+@media (max-width: 75em) {
   .about-us {
     position: relative;
     height: 100%;
@@ -193,7 +193,7 @@
   border-radius: 4rem;
 }
 
-@media (any-hover: none), (max-width: 75em) {
+@media (max-width: 75em) {
   .ice-cream {
     display: flex;
     justify-content: space-between;
@@ -242,7 +242,7 @@
   height: 25rem;
 }
 
-@media (any-hover: none), (max-width: 75em) {
+@media (max-width: 75em) {
   .candy-bar {
     display: flex;
     justify-content: center;
@@ -355,7 +355,7 @@
   cursor: pointer;
 }
 
-@media (any-hover: none), (max-width: 75em) {
+@media (max-width: 75em) {
   .footer {
     display: none;
   }
@@ -451,7 +451,7 @@
   display: none;
 }
 
-@media (any-hover: none), (max-width: 37em) {
+@media (max-width: 37em) {
   .category {
     height: 13rem;
   }
@@ -582,7 +582,7 @@
   height: 1.5rem;
 }
 
-@media (any-hover: none), (max-width: 75em) {
+@media (max-width: 75em) {
   .product-info {
     margin: auto;
     width: 100%;
@@ -671,7 +671,7 @@
   border-radius: 2rem;
 }
 
-@media (any-hover: none), (max-width: 75em) {
+@media (max-width: 75em) {
   .image-slider {
     width: 10rem;
     height: 20rem;
@@ -766,7 +766,7 @@
   font-size: 1.9rem;
 }
 
-@media (any-hover: none), (max-width: 75em) {
+@media (max-width: 75em) {
   .landing-page {
     display: flex;
     flex-direction: column;
@@ -941,7 +941,7 @@ mark.orange {
   height: fit-content;
 }
 
-@media (any-hover: none), (max-width: 75em) {
+@media (max-width: 75em) {
   .products-showcase__ice-cream {
     margin: 0;
     height: fit-content;
@@ -998,7 +998,7 @@ mark.orange {
   border-radius: 50%;
 }
 
-@media (any-hover: none), (max-width: 56em) {
+@media (max-width: 56em) {
   .categories {
     display: flex;
     justify-content: center;
@@ -1032,7 +1032,7 @@ mark.orange {
   opacity: 0.9;
   display: none;
 }
-@media (any-hover: none), (max-width: 75em) {
+@media (max-width: 75em) {
   .nav-bar__mobile {
     display: flex;
     justify-content: space-between;
@@ -1112,7 +1112,7 @@ mark.orange {
   top: 0;
   z-index: 1000;
 }
-@media (any-hover: none), (max-width: 56em) {
+@media (max-width: 56em) {
   .nav-bar__desktop {
     display: none;
   }
@@ -1157,6 +1157,12 @@ mark.orange {
   height: 3rem;
 }
 
+@media (max-width: 68em) {
+  .nav-bar__desktop__menu {
+    justify-content: flex-end;
+    margin-right: 1rem;
+  }
+}
 /*
 green: #3FAF82
 
