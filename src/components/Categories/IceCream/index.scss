@@ -1,0 +1,91 @@
+@import '../../sharedStyles/utils/variables';
+@import '../../sharedStyles/utils/mixins';
+
+.ice-cream {
+  display: none;
+  height: 40rem;
+  width: 100%;
+  margin: 2rem 2rem;
+  gap: 1rem;
+
+  &__visible {
+    display: flex;
+    justify-content: flex-start;
+
+  }
+
+  &__image-slides {
+    width: 20%;
+    height: 100%;
+    margin: 0 3rem 1rem 5rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 60%;
+
+    &__title {
+      display: flex;
+      justify-content: flex-start;
+      font-style: italic;
+      font-size: 2.5rem;
+      border-bottom: 1px;
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      color: #424141;
+      height: 100%;
+      width: 100%;
+    }
+
+    &__prices {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      &__element {
+        font-size: 1.5rem;
+        margin: 0;
+        color: #424141
+      }
+    }
+  }
+
+  & img {
+    width: 25rem;
+    height: 30rem;
+    border-radius: 4rem;
+  }
+}
+
+
+@include respond($tablet-landscape) {
+  .ice-cream {
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem;
+    min-height: 35rem;
+
+    &__image-slides {
+      margin: 0;
+      height: 20rem;
+    }
+
+    &__info {
+      width: 55%;
+      height: 40%;
+
+      &__title {
+        font-size: 1.2rem;
+      }
+
+      &__prices {
+
+        &__element {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

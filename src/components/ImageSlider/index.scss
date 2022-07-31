@@ -1,3 +1,6 @@
+@import '../../components/sharedStyles/utils/variables';
+@import '../../components/sharedStyles/utils/mixins';
+
 .image-slider {
   width: 100%;
   height: 100%;
@@ -57,5 +60,33 @@
   & img {
     width: 50%;
     border-radius: 2rem;
+  }
+}
+
+@include respond($tablet-landscape) {
+  .image-slider {
+    width: 10rem;
+    height: 20rem;
+
+    &__arrow {
+      display: none;
+
+      &__right {
+        display: none;
+      }
+
+      &__left {
+        display: none;
+      }
+    }
+
+    &__title {
+      display: none;
+    }
+
+    & img {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
