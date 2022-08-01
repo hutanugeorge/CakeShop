@@ -71,6 +71,7 @@
 }
 .about-us__information__sections {
   width: 100%;
+  height: fit-content;
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -128,7 +129,7 @@
   justify-content: center;
 }
 
-@media (max-width: 37rem) {
+@media (max-width: 75rem) {
   .about-us {
     position: relative;
     height: 100%;
@@ -138,11 +139,47 @@
     display: flex;
     justify-content: center;
     width: 80%;
-    height: 50%;
+    height: 30%;
   }
   .about-us__group-photo img {
     width: 95%;
-    height: 95%;
+    height: 55%;
+  }
+  .about-us__information {
+    width: 95%;
+  }
+  .about-us__information__sections {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+  }
+  .about-us__information__sections__section {
+    min-height: 10rem;
+    width: 100%;
+  }
+  .about-us__information__sections__section__container__title {
+    font-size: 1.5rem;
+  }
+  .about-us__information__sections__section__container__details p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 75rem) {
+  .about-us {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  .about-us__group-photo {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 30%;
+  }
+  .about-us__group-photo img {
+    width: 95%;
+    height: 55%;
   }
   .about-us__information {
     width: 95%;
@@ -579,8 +616,7 @@
     z-index: 4;
     width: 100vw;
     height: 100vh;
-    background-color: black;
-    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.7);
     transition: 0.4s;
   }
   .mobile-info__visible {
@@ -609,10 +645,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: black;
   }
   .mobile-info__body__image img {
+    border-radius: 2rem;
     width: 100%;
-    height: 90%;
+    height: 100%;
   }
   .mobile-info__close-button {
     position: absolute;
@@ -1491,7 +1529,7 @@ mark.orange {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(66, 64, 64, 0.5);
+    background-color: rgb(66, 64, 64);
     transition: 0.5s;
     width: 100%;
     gap: 5rem;
@@ -1499,7 +1537,7 @@ mark.orange {
   }
   .nav-bar__mobile__dropdown__links--visible {
     background-color: black;
-    opacity: 0.6;
+    opacity: 0.8;
     transition: 0.5s;
     top: 5rem;
     width: 100%;
@@ -1559,7 +1597,7 @@ mark.orange {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(66, 64, 64, 0.5);
+    background-color: rgb(66, 64, 64);
     transition: 0.5s;
     width: 100%;
     gap: 5rem;
@@ -1567,7 +1605,7 @@ mark.orange {
   }
   .nav-bar__mobile__dropdown__links--visible {
     background-color: black;
-    opacity: 0.6;
+    opacity: 0.8;
     transition: 0.5s;
     top: 5rem;
     width: 100%;

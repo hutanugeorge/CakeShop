@@ -23,8 +23,7 @@ export default ({ type, image, info }: CakeProps) => {
                         <div
                            className="category__container__primary-info__image__wrapper__card__descriptions">
                            <h1>Lorem ipsum.dsa</h1>
-                           <p>
-                              {info} </p>
+                           <p> {info} </p>
                         </div>
                      </div>
                   </div>
@@ -34,7 +33,8 @@ export default ({ type, image, info }: CakeProps) => {
             </div>
          </div>
       </div>
-      <div className={`mobile-info ${ visibleInfo ? 'mobile-info__visible': ''}`} onClick={ (e) => e.stopPropagation()}>
+      <div className={`mobile-info ${visibleInfo ? 'mobile-info__visible' : ''}`}
+           onClick={(e) => e.stopPropagation()}>
          <div className="mobile-info__header">
             <p className="mobile-info__header__title">
                {type}
@@ -45,11 +45,11 @@ export default ({ type, image, info }: CakeProps) => {
                {info}
             </p>
             <div className="mobile-info__body__image">
-               <img src={image} alt='cake image' />
+               <img src={image} alt="cake image"/>
             </div>
          </div>
-         <div className="mobile-info__close-button" onClick={ () => setVisibleInfo(prev => !prev)}>
-            <CloseIcon />
+         <div className="mobile-info__close-button" onClick={() => setVisibleInfo(prev => !prev)}>
+            <CloseIcon/>
          </div>
       </div>
 

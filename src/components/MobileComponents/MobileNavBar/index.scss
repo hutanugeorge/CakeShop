@@ -51,7 +51,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: rgba(66, 64, 64, 0.5);
+        background-color: rgba(66, 64, 64, 1);
         transition: .5s;
         width: 100%;
         gap: 5rem;
@@ -59,7 +59,7 @@
 
         &--visible {
           background-color: black;
-          opacity: .6;
+          opacity: .8;
           transition: .5s;
           top: 5rem;
           width: 100%;

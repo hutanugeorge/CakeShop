@@ -19,6 +19,7 @@
 
     &__sections {
       width: 100%;
+      height: fit-content;
       display: flex;
       justify-content: center;
       gap: 1rem;
@@ -92,7 +93,7 @@
   }
 }
 
-@include respond($phone) {
+@include respond($tablet-landscape) {
   .about-us {
     position: relative;
     height: 100%;
@@ -102,11 +103,11 @@
       display: flex;
       justify-content: center;
       width: 80%;
-      height: 50%;
+      height: 30%;
 
       & img {
         width: 95%;
-        height: 95%;
+        height: 55%;
       }
     }
 
@@ -142,10 +143,3 @@
   }
 }
 
-@include respond($tablet-portrait) {
-  .about-us {
-
-    &__group-photo {
-    }
-  }
-}

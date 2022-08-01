@@ -165,8 +165,7 @@
     z-index: 4;
     width: 100vw;
     height: 100vh;
-    background-color: black;
-    opacity: .8;
+    background-color: rgba(0, 0, 0, 0.7);
     transition: .4s;
 
     &__visible {
@@ -199,11 +198,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        color: black;
 
         & img {
+          border-radius: 2rem;
           width: 100%;
-          height: 90%;
-
+          height: 100%;
         }
       }
     }
