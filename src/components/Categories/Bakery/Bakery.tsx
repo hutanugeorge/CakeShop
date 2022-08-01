@@ -22,10 +22,9 @@ export default ({ type, image, info }: BakeryProps) => {
                         <img src={image} alt="photo"/>
                         <div
                            className="category__container__primary-info__image__wrapper__card__descriptions">
-                           <h1>Lorem ipsum.</h1>
-                           <p>
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod,
-                              voluptates? </p>
+                           <h1>{type}</h1>
+                           <div>
+                              {info} </div>
                         </div>
                      </div>
                   </div>
@@ -42,9 +41,9 @@ export default ({ type, image, info }: BakeryProps) => {
             </p>
          </div>
          <div className="mobile-info__body">
-            <p className="mobile-info__body__info">
+            <div className="mobile-info__body__info">
                {info}
-            </p>
+            </div>
             <div className="mobile-info__body__image">
                <img src={image} alt='cake image' />
             </div>

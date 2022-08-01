@@ -10,7 +10,8 @@ export default ({ composition, recommendation, price }: CakeProps) => {
          <div className="product-info__details__composition__wrapper">
             {composition.map((ingredient, id) => {
                return <div key={id} className="product-info__details__composition">
-                  <div><CheckIcon/>
+                  <div>
+                     <CheckIcon/>
                      <p>{ingredient}</p>
                   </div>
                </div>

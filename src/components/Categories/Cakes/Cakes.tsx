@@ -23,7 +23,7 @@ export default ({ type, image, info }: CakeProps) => {
                         <div
                            className="category__container__primary-info__image__wrapper__card__descriptions">
                            <h1>Lorem ipsum.dsa</h1>
-                           <p> {info} </p>
+                           <div> {info} </div>
                         </div>
                      </div>
                   </div>
@@ -41,9 +41,9 @@ export default ({ type, image, info }: CakeProps) => {
             </p>
          </div>
          <div className="mobile-info__body">
-            <p className="mobile-info__body__info">
+            <div className="mobile-info__body__info">
                {info}
-            </p>
+            </div>
             <div className="mobile-info__body__image">
                <img src={image} alt="cake image"/>
             </div>

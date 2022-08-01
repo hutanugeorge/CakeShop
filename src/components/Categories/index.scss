@@ -79,6 +79,21 @@
               padding: 20px;
               box-sizing: border-box;
               clip-path: circle(0% at 100% 100%);
+
+              & div {
+                display: flex;
+                align-items: flex-start;
+
+                & p {
+                  font-size: 1.1rem;
+                  margin: 0;
+                }
+              }
+
+              & h1 {
+                display: flex;
+                justify-content: center;
+              }
             }
           }
         }
