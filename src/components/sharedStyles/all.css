@@ -776,6 +776,7 @@
 @media (max-width: 75rem) {
   .landing-page {
     display: flex;
+    justify-content: flex-start;
     flex-direction: column;
     height: 90vh;
     padding: 5rem 0 0 0;
@@ -790,7 +791,7 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    height: 70%;
+    height: 50%;
     padding: 0;
   }
   .landing-page__left-section__description {
@@ -828,8 +829,8 @@
   }
   .landing-page__left-section__cake-images img {
     border: 2px solid #FD794F;
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
   }
   .landing-page__right-section {
     display: flex;
@@ -845,13 +846,13 @@
   }
   .landing-page__right-section__features__feature {
     margin: 0;
-    font-size: 1.7rem;
+    font-size: 2rem;
     padding: 1rem 0 0 1rem;
   }
   .landing-page__right-section__features__feature svg {
     color: #FD794F;
-    width: 1.7rem;
-    height: 1.7rem;
+    width: 2rem;
+    height: 2rem;
   }
   .landing-page__right-section__explore {
     display: flex;
