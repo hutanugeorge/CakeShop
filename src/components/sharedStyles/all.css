@@ -28,6 +28,7 @@
   .catalog-page__categories {
     display: flex;
     flex-direction: row;
+    height: 100%;
     width: 100%;
   }
 }
@@ -40,6 +41,7 @@
   .catalog-page__categories {
     display: flex;
     flex-direction: row;
+    height: 100%;
     width: 100%;
   }
 }
@@ -163,18 +165,16 @@
   }
 }
 .ice-cream {
-  display: none;
+  display: flex;
   height: 40rem;
   width: 100%;
   margin: 2rem 2rem;
   gap: 1rem;
 }
-.ice-cream__visible {
-  display: flex;
-  justify-content: flex-start;
-}
 .ice-cream__image-slides {
-  width: 20%;
+  border: 2px solid #FD794F;
+  border-radius: 2rem;
+  width: 60%;
   height: 100%;
   margin: 0 3rem 1rem 5rem;
 }
@@ -182,7 +182,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  width: 60%;
+  width: 100%;
 }
 .ice-cream__info__title {
   display: flex;
@@ -215,14 +215,20 @@
 @media (max-width: 75rem) {
   .ice-cream {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0.5rem;
     min-height: 35rem;
   }
   .ice-cream__image-slides {
     margin: 0;
     height: 20rem;
-    width: 50%;
+    width: fit-content;
+    border: 2px solid #FD794F;
+    border-radius: 2rem;
+  }
+  .ice-cream__image-slides img {
+    width: 100%;
+    height: 100%;
   }
   .ice-cream__info {
     display: flex;
@@ -241,14 +247,20 @@
 @media (max-width: 75rem) {
   .ice-cream {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0.5rem;
     min-height: 35rem;
   }
   .ice-cream__image-slides {
     margin: 0;
     height: 20rem;
-    width: 50%;
+    width: fit-content;
+    border: 2px solid #FD794F;
+    border-radius: 2rem;
+  }
+  .ice-cream__image-slides img {
+    width: 100%;
+    height: 100%;
   }
   .ice-cream__info {
     display: flex;
@@ -1242,8 +1254,7 @@ mark.orange {
 .products-showcase {
   min-height: 20rem;
   height: fit-content;
-  padding-top: 8rem;
-  width: 100%;
+  width: 100vw;
 }
 .products-showcase__cakes {
   display: none;
@@ -1277,7 +1288,7 @@ mark.orange {
 }
 .products-showcase__ice-cream {
   display: none;
-  height: 40rem;
+  height: fit-content;
   width: 60rem;
   margin: 2rem 2rem;
   gap: 1rem;
@@ -1297,6 +1308,9 @@ mark.orange {
 }
 
 @media (max-width: 75rem) {
+  .products-showcase {
+    padding-top: 8rem;
+  }
   .products-showcase__ice-cream {
     margin: 0;
     height: fit-content;
@@ -1304,6 +1318,9 @@ mark.orange {
   }
 }
 @media (max-width: 75rem) {
+  .products-showcase {
+    padding-top: 8rem;
+  }
   .products-showcase__ice-cream {
     margin: 0;
     height: fit-content;
@@ -1324,11 +1341,9 @@ mark.orange {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 20rem;
   justify-content: center;
-  padding-top: 2rem;
   box-shadow: 0 0.5rem 0.5rem rgba(4, 3, 3, 0.1019607843);
-  width: 21rem;
+  width: 20rem;
   height: 20rem;
   transition: 0.3s;
   cursor: pointer;
@@ -1376,12 +1391,10 @@ mark.orange {
     align-items: center;
     justify-content: center;
     padding-top: 2rem;
-    min-width: 20%;
-    width: 7rem;
-    height: 7rem;
-  }
-  .categories__element:hover {
-    box-shadow: none;
+    min-width: 25%;
+    width: 11rem;
+    min-height: 25%;
+    height: 11rem;
   }
   .categories__element img {
     border: 1px solid #FD794F;
@@ -1405,17 +1418,21 @@ mark.orange {
     align-items: center;
     justify-content: center;
     padding-top: 2rem;
-    min-width: 20%;
-    width: 7rem;
-    height: 7rem;
-  }
-  .categories__element:hover {
-    box-shadow: none;
+    min-width: 25%;
+    width: 11rem;
+    min-height: 25%;
+    height: 11rem;
   }
   .categories__element img {
     border: 1px solid #FD794F;
     width: 100%;
     height: 100%;
+  }
+}
+@media (max-width: 37rem) {
+  .categories__element {
+    height: 9rem;
+    width: 9rem;
   }
 }
 .nav-bar__mobile {

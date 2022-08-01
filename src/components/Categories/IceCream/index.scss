@@ -2,20 +2,16 @@
 @import '../../sharedStyles/utils/mixins';
 
 .ice-cream {
-  display: none;
+  display: flex;
   height: 40rem;
   width: 100%;
   margin: 2rem 2rem;
   gap: 1rem;
 
-  &__visible {
-    display: flex;
-    justify-content: flex-start;
-
-  }
-
   &__image-slides {
-    width: 20%;
+    border: 2px solid #FD794F;
+    border-radius: 2rem;
+    width: 60%;
     height: 100%;
     margin: 0 3rem 1rem 5rem;
   }
@@ -24,7 +20,7 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    width: 60%;
+    width: 100%;
 
     &__title {
       display: flex;
@@ -63,14 +59,21 @@
 @include respond($tablet-landscape) {
   .ice-cream {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: .5rem;
     min-height: 35rem;
 
     &__image-slides {
       margin: 0;
       height: 20rem;
-      width: 50%;
+      width: fit-content;
+      border: 2px solid #FD794F;
+      border-radius: 2rem;
+
+      & img {
+        width: 100%;
+        height: 100%
+      }
     }
 
     &__info {

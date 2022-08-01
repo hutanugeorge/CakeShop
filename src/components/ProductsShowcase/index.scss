@@ -4,8 +4,7 @@
 .products-showcase {
   min-height: 20rem;
   height: fit-content;
-  padding-top: 8rem;
-  width: 100%;
+  width: 100vw;
 
   &__cakes {
     display: none;
@@ -45,7 +44,7 @@
 
   &__ice-cream {
     display: none;
-    height: 40rem;
+    height: fit-content;
     width: 60rem;
     margin: 2rem 2rem;
     gap: 1rem;
@@ -71,6 +70,7 @@
 
 @include respond($tablet-landscape) {
   .products-showcase {
+    padding-top: 8rem;
 
     &__ice-cream {
       margin: 0;
