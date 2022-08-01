@@ -8,7 +8,6 @@ export default () => {
       </p>
       <div className="candy-bar__image">
          <img src='https://wp.wedme.ro/wp-content/uploads/2020/06/Flavius-Partan-056.jpg' alt='candy bar' />
-
       </div>
    </div>
 }
