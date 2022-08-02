@@ -30,6 +30,7 @@
 
       & img {
         border-radius: 3rem;
+        border: 2px solid $orange;
         width: 6rem;
         height: 6rem;
       }
@@ -41,6 +42,7 @@
 
     & img {
       border-radius: 10rem;
+      border: 2px solid $orange;
       width: 26rem;
       height: 45rem;
     }
@@ -54,9 +56,13 @@
     &__features {
 
       &__feature {
-        font-size: 2rem;
+        font-size: 2.5rem;
         display: flex;
         align-items: center;
+
+        & svg {
+          color: $orange;
+        }
       }
 
     }
@@ -88,6 +94,11 @@
       }
     }
   }
+}
+
+mark.orange {
+  background-color: transparent;
+  color: #FD794F;
 }
 
 @include respond($tablet-landscape) {
@@ -292,7 +303,6 @@
             height: 1.8rem;
           }
         }
-
       }
 
       &__explore {
@@ -356,12 +366,6 @@
      }
    }
  }
-}
-
-mark.orange {
-  background-color: transparent;
-  color: #FD794F;
-
 }
 
 @keyframes pulse {

@@ -22,7 +22,7 @@ export default ({ type, image, info }: CakeProps) => {
                         <img src={image} alt="photo"/>
                         <div
                            className="category__container__primary-info__image__wrapper__card__descriptions">
-                           <h1>Lorem ipsum.dsa</h1>
+                           <h1>{type}</h1>
                            <div> {info} </div>
                         </div>
                      </div>
