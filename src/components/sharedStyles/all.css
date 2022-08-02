@@ -1646,6 +1646,7 @@ mark.orange {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     min-width: 12rem;
     height: 100%;
     margin: 0 0 0 1rem;
@@ -1654,6 +1655,10 @@ mark.orange {
     font-family: Merienda, serif;
     font-style: italic;
     color: #FD794F;
+  }
+  .nav-bar__mobile__shop-name p {
+    margin: 0;
+    font-size: 1.1rem;
   }
   .nav-bar__mobile__dropdown {
     width: 70%;
@@ -1714,6 +1719,7 @@ mark.orange {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     min-width: 12rem;
     height: 100%;
     margin: 0 0 0 1rem;
@@ -1722,6 +1728,10 @@ mark.orange {
     font-family: Merienda, serif;
     font-style: italic;
     color: #FD794F;
+  }
+  .nav-bar__mobile__shop-name p {
+    margin: 0;
+    font-size: 1.1rem;
   }
   .nav-bar__mobile__dropdown {
     width: 70%;
@@ -1802,6 +1812,12 @@ mark.orange {
   font-family: Merienda, serif;
   font-style: italic;
   color: #FD794F;
+}
+.nav-bar__desktop__shop-name p {
+  position: absolute;
+  left: 20%;
+  top: 40%;
+  font-size: 1.5rem;
 }
 .nav-bar__desktop__menu {
   display: flex;

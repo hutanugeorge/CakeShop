@@ -19,6 +19,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       min-width: 12rem;
       height: 100%;
       margin: 0 0 0 1rem;
@@ -27,6 +28,11 @@
       font-family: Merienda, serif;
       font-style: italic;
       color: #FD794F;
+
+      & p {
+        margin: 0;
+        font-size: 1.1rem;
+      }
       }
 
     &__dropdown {

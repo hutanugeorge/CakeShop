@@ -11,6 +11,7 @@ export default () => {
             navigate('/')
          }>
             Cofetaria Acasa
+            <p>by Claudia Branzaru</p>
          </p>
          <ul className="nav-bar__desktop__menu">
             <li>
