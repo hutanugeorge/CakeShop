@@ -1306,7 +1306,7 @@ mark.orange {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    height: 90vh;
+    height: 100vh;
     padding: 5rem 0 0 0;
     gap: 0;
   }
@@ -1319,7 +1319,7 @@ mark.orange {
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    height: 40%;
+    height: 50%;
     padding: 0;
   }
   .landing-page__left-section__description {
@@ -1336,7 +1336,7 @@ mark.orange {
   }
   .landing-page__left-section__description p {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     width: 100%;
     margin: 0;
     background-color: white;
@@ -1357,8 +1357,8 @@ mark.orange {
   }
   .landing-page__left-section__cake-images img {
     border: 2px solid #FD794F;
-    width: 5rem;
-    height: 5rem;
+    width: 4.5rem;
+    height: 4.5rem;
   }
   .landing-page__right-section {
     display: flex;
@@ -1370,11 +1370,11 @@ mark.orange {
   .landing-page__right-section__features {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
   }
   .landing-page__right-section__features__feature {
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.7rem;
     padding: 1rem 0 0 1rem;
   }
   .landing-page__right-section__features__feature svg {
