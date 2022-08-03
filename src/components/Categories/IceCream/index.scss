@@ -56,12 +56,13 @@
 }
 
 
-@include respond($tablet-landscape) {
+@include respond($tablet-portrait) {
   .ice-cream {
     display: flex;
     justify-content: center;
     margin: .5rem;
-    min-height: 35rem;
+    width: 90%;
+    min-height: 40rem;
 
     &__image-slides {
       margin: 0;
@@ -83,8 +84,9 @@
       height: 100%;
 
       &__title {
+        width: 100%;
         height: fit-content;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
       }
 
       &__prices {
@@ -93,6 +95,35 @@
           font-size: 1.2rem;
         }
       }
+    }
+  }
+}
+
+@include respond($phone) {
+  .ice-cream {
+    justify-content: flex-start;
+
+    &__image-slides {
+      height: 16rem;
+
+    }
+
+    &__info {
+      width: 100%;
+
+      &__title {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@include respond($mini-phone) {
+  .ice-cream {
+    width: 100%;
+
+    &__info {
+      width: 100%;
     }
   }
 }

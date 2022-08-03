@@ -71,16 +71,23 @@
 
 @include respond($tablet-landscape) {
   .products-showcase {
+    width: 100%;
     padding-top: 8rem;
 
     &__ice-cream {
+      width: 100%;
       margin: 0;
       height: fit-content;
-      width: 100%;
+    }
+  }
+}
 
-      &__visible {
-      }
+@include respond($mini-phone) {
+  .products-showcase {
 
+    &__ice-cream {
+      width: 40%;
+      height: fit-content;
     }
   }
 }

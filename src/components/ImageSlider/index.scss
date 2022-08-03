@@ -91,3 +91,10 @@
     }
   }
 }
+
+@include respond($phone) {
+  .image-slider {
+    width: 8rem;
+    height: 16rem;
+  }
+}

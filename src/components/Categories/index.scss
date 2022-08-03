@@ -3,7 +3,7 @@
 
 .category {
   display: flex;
-  width: fit-content;
+  width: 8rem;
   height: 20rem;
   justify-content: center;
 
@@ -127,9 +127,11 @@
 
 @include respond($phone) {
   .category {
+    padding-bottom: 1rem;
     height: 13rem;
 
     &__container {
+      height: fit-content;
 
       &__primary-info {
 
@@ -165,11 +167,20 @@
           }
         }
         &__type {
+          display: flex;
+          justify-content: center;
+          width: 100%;
           font-size: 1.4rem;
-          margin: .5rem 0 .2rem 0;
+          margin: .5rem 0 0 0;
         }
       }
     }
+  }
+
+  .category-list {
+    display: flex;
+    height: 100%;
+    gap: 3rem;
   }
 
 
