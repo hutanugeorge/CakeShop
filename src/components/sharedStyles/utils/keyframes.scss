@@ -1,0 +1,45 @@
+@keyframes pulse {
+  0% {
+    box-shadow: #FD794F 0 0 0 0;
+  }
+
+  75% {
+    box-shadow: #ff69b400 0 0 0 10px;
+  }
+}
+
+@keyframes slide_from_right {
+  0% {
+    transform: translateX(20rem)
+  }
+  100% {
+    transform: translateX(0)
+  }
+}
+
+@keyframes slide_from_bottom {
+  0% {
+  transform: translateY(20rem)
+   }
+  100% {
+    transform: translateY(0)
+  }
+}
+
+@keyframes slide_from_left {
+  0% {
+    transform: translateX(-20rem)
+  }
+  100% {
+    transform: translateY(0)
+  }
+}
+
+@keyframes slide_from_top {
+  0% {
+    transform: translateY(-20rem)
+  }
+  100% {
+    transform: translateY(0)
+  }
+}
