@@ -1,10 +1,10 @@
 export const cookiesArray = [
    {
       type: 'Alba ca zapada',
-      price: 48,
+      price: '48 ron/kg',
       image: './index.jpg',
       info: {
-         price: 48,
+         price: '48 ron/kg',
          composition: [ 'Ou', 'Faina', 'Lapte', 'Unt', 'Zahar', 'Lamaie', 'Ciocolata alba' ],
          recommendation: '*Recomandat pentru evenimente'
       }
@@ -14,7 +14,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: 48,
+         price: '48 ron/kg',
          composition: [ 'Ou', 'Lapte', 'Zahar', 'Unt', 'Faina', 'Vanilie', 'Cacao', 'Cocos', 'Ciocolata' +
          ' alba' ],
          recommendation: '*Recomandat pentru evenimente'
@@ -22,7 +22,7 @@ export const cookiesArray = [
    },
    {
       type: 'Snickers',
-      price: 50,
+      price: '50',
       image: './index.jpg',
       info: {
          price: 75,
@@ -35,7 +35,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: 53,
+         price: '53 ron/kg',
          composition: [ 'Blat copt', 'Nuca', 'Unt', 'Ciocolata', 'Visine din alcool', 'Rom' ],
          recommendation: '*Recomandat pentru evenimente'
       }
@@ -45,7 +45,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: 50,
+         price: '50 ron/kg',
          composition: [ 'Lapte praf', 'Unt', 'Nuca de cocos', 'Razatura de cocos', 'Migdale coapte' ],
          recommendation: '*Recomandat pentru evenimente'
       }
@@ -55,7 +55,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: 55,
+         price: '55 ron/kg',
          composition: [ 'Ou', 'Unt', 'Faina', 'Zahar', 'Ciocolata', 'Smantana' ],
          recommendation: '*Recomandat pentru evenimente'
       }
@@ -65,7 +65,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: 75,
+         price: '75 ron/kg',
          composition: [ 'Ou', 'Lapte', 'Faina', 'Unt', 'Ciocolata' ],
          recommendation: '*Recomandat pentru evenimente'
       }
@@ -75,7 +75,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: 68,
+         price: '68 ron/kg',
          composition: [ 'Ou', 'Faina', 'Lapte', 'Unt', 'Vanilie/Caramel', 'Ciocolata', 'Fructe' ],
          recommendation: '*Recomandat pentru evenimente'
       }
@@ -85,7 +85,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: 50,
+         price: '50 ron/kg',
          composition: [ 'Ou', 'Lapte', 'Faina', 'Cacao', 'Mascarpone', 'Smantana', 'Ciocolata cu' +
          ' menta' ],
          recommendation: '*Recomandat pentru evenimente'
@@ -96,7 +96,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: 75,
+         price: '75 ron/kg',
          composition: [ 'Lapte praf', 'Unt', 'Cacao/Fistic/Trandafir' ],
          recommendation: '*Recomandat pentru evenimente'
       }
@@ -106,7 +106,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: 55,
+         price: '55 ron/kg',
          composition: [ 'Ou', 'Faina', 'Lapte', 'Unt', 'Vanilie' ],
          recommendation: '*Recomandat pentru evenimente'
       }
@@ -116,7 +116,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: 60,
+         price: '60 ron/kg',
          composition: [ 'Ou', 'Faina', 'Lapte', 'Unt', 'Vanilie' ],
          recommendation: '*Recomandat pentru evenimente'
       }
@@ -126,7 +126,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: 55,
+         price: '55 ron/kg',
          composition: [ 'Ou', 'Faina', 'Lapte', 'Unt', 'Vanilie' ],
          recommendation: '*Recomandat pentru evenimente'
       }
@@ -136,7 +136,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: 180,
+         price: '180 ron/kg',
          composition: [ 'Faina de migdale', 'Ou', 'Zahar', 'Ciocolata', 'Diverse arome' ],
          recommendation: '*Recomandat pentru evenimente'
       }
@@ -146,7 +146,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: 65,
+         price: '65 ron/kg',
          composition: [ 'Ou', 'Faina', 'Unt', 'Telemea', 'Chimen/Mac' ],
          recommendation: '*Recomandat pentru evenimente'
       }
@@ -156,7 +156,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: 48,
+         price: '48 ron/kg',
          composition: [ 'Ou', 'Faina', 'Lapte', 'Unt', 'Ciocolata', 'Rom' ],
          recommendation: ''
       }
@@ -166,7 +166,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: 58,
+         price: '58 ron/kg',
          composition: [ 'Ou', 'Faina', 'Lapte', 'Lamaie', 'Visine', 'Cacao' ],
          recommendation: '*Recomandata pentru eveniment'
       }
@@ -176,7 +176,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: 50,
+         price: '50 ron/kg',
          composition: [ 'Ou', 'Faina', 'Drojdie', 'Untura', 'Rahat/Gem cu nuca' ],
          recommendation: '*Recomandat pentru evenimente'
       }
@@ -186,7 +186,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: 63,
+         price: '63 ron/kg',
          composition: [],
          recommendation: '*Recomandat pentru evenimente'
       }
@@ -196,7 +196,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: 50,
+         price: '50 ron/kg',
          composition: [ 'Ou', 'Faina', 'Lapte', 'Iaurt', 'Visine/Rubarba', 'Bezea' ],
          recommendation: ''
       }
@@ -206,7 +206,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: 75,
+         price: '75 ron/kg',
          composition: [ 'Ou', 'Faina', 'Zahar', 'Unt', 'Lapte', 'Nuca', 'Ciocolata', 'Rom' ],
          recommendation: '*Recomandat pentru evenimente'
       }
@@ -216,7 +216,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: 5,
+         price: '5 ron/buc',
          composition: [ 'Ou', 'Faina', 'Lapte', 'Vanilie', 'Frisca' ],
          recommendation: '*Recomandat pentru evenimente'
       }
@@ -226,7 +226,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: '6,3',
+         price: '6,3 ron/buc',
          composition: ['Ou', 'Zahar', 'Faina', 'Unt', 'Ciocolata', 'Rom', 'Fondant'],
          recommendation: ''
       }
@@ -236,7 +236,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: '6,2',
+         price: '6,2 ron/buc',
          composition: ['Ou', 'Lapte', 'Faina', 'Drojdie', 'Smantana', 'Jeleu de fucte', 'Rom'],
          recommendation: ''
       }
@@ -246,7 +246,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: '5,5',
+         price: '5,5 ron/buc',
          composition: ['Ou', 'Lapte', 'Faina', 'Unt', 'Vanilie/Ciocolata'],
          recommendation: ''
       }
@@ -256,7 +256,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: 10,
+         price: '10 ron/buc',
          composition: ['Crema de branza', 'Ciocolata alba', 'Unt de cacao', 'Gelatina/Pectina', 'Piure de fructe'],
          recommendation: '*Recomandat pentru evenimente'
       }
@@ -266,8 +266,8 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: 90,
-         composition: ['Ou', 'Smantana', 'Ciocolata', 'Crema de wescy'],
+         price: '90 ron/kg',
+         composition: ['Ou', 'Smantana', 'Ciocolata', 'Crema de whisky'],
          recommendation: '*Recomandat pentru evenimente'
       }
    },
@@ -276,7 +276,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: 7,
+         price: '7 ron/buc',
          composition: ['Ou', 'Faina', 'Lapte', 'Zahar', 'Cafea', 'Mascarpone', 'Smantana', 'Amaretto','Cacao'],
          recommendation: ''
       }
@@ -286,7 +286,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: 12,
+         price: '12 ron/buc',
          composition: ['Ou', 'Lapte', 'Unt', 'Faina de migdale', 'Cacao', 'Vanilie', 'Fructe'],
          recommendation: ''
       }
@@ -296,7 +296,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: 6,
+         price: '6 ron/buc',
          composition: ['Ou', 'Faina', 'Zahar', 'Scortisoara', 'Mar', 'Smantana'],
          recommendation: ''
       }
@@ -306,7 +306,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: 5,
+         price: '5 ron/buc',
          composition: ['Blat copt', 'Biscuite', 'Stafide inmuiate in rom', 'Nuca coapta', 'Ciocolata', 'Unt'],
          recommendation: '*Recomandat pentru evenimente'
       }
@@ -316,7 +316,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: 6,
+         price: '6 ron/buc',
          composition: ['Lapte', 'Cacao', 'Gelatina', 'Rom', 'Smantana'],
          recommendation: ''
       }
@@ -326,7 +326,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: 12,
+         price: '12 ron/buc',
          composition: ['Lapte', 'Ou', 'Faina', 'Cacao', 'Zahar', 'Cicolata', 'Vanilie', 'Alune'],
          recommendation: ''
       }
@@ -336,7 +336,7 @@ export const cookiesArray = [
       price: 50,
       image: './index.jpg',
       info: {
-         price: '6/8/10',
+         price: '6/8/10 ron/buc',
          composition: ['Ou', 'Unt', 'Lapte', 'Faina', 'Scortisoara', 'Nucsoara', 'Cuisoare', 'Royal icing'],
          recommendation: '*Recomandat pentru evenimente'
       }

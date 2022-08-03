@@ -11,7 +11,7 @@ export default () => {
             return <Cookies key={id} type={type} image={image}
                             info={<CookiesInfo composition={composition}
                                                recommendation={recommendation}
-                                               price={`${price} ron/kg`}/>}/>
+                                               price={`${price}`}/>}/>
          })}
       </div>
 

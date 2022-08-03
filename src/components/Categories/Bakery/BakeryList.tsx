@@ -14,7 +14,7 @@ export default () =>
             info={<BakeryInfo
                composition={composition}
                recommendation={recommendation}
-               price={`${price} ron/kg`}/>
+               price={`${price}`}/>
             }
          />
       })}

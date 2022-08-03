@@ -4,8 +4,8 @@ export const cakesArray = [
       image: './cake2.png',
       info: {
          composition: [ 'Blat de biscuite cu migdale', 'Crema vanilie' ],
-         recommendation: 'Recomandat pentru evenimente',
-         price: 90
+         recommendation: '*Recomandat pentru evenimente',
+         price: '90 ron/kg'
       }
    },
    {
@@ -14,16 +14,16 @@ export const cakesArray = [
       info: {
          composition: [ 'Ou', 'Faina', 'Lapte', 'Ciocolata', 'Unt' ],
          recommendation: '*Decor limitat',
-         price: 80
+         price: '80 ron/kg'
       }
    },
    {
       type: 'Tort Egiptean',
       image: 'cake2.png',
       info: {
-         composition: [ 'Ou', 'Faina', 'Nuca', 'Krantz', 'Nuca caramelizata', 'Vanilie', 'Lapte', 'Unt', 'Smochine' ],
+         composition: ['Faina', 'Nuca', 'Krantz', 'Nuca caramelizata', 'Vanilie', 'Lapte', 'Unt', 'Smochine' ],
          recommendation: '*Decor limitat',
-         price: 80
+         price: '80 ron/kg'
       }
    },
    {
@@ -33,7 +33,7 @@ export const cakesArray = [
          composition: [ 'Lapte', 'Ou', 'Faina', 'Cacao', 'Cafea', 'Gelatina', 'Ciocolata' +
          ' alba/lapte/neagra' ],
          recommendation: '*Decor limitat',
-         price: 70
+         price: '70 ron/kg'
       }
    },
    {
@@ -42,7 +42,7 @@ export const cakesArray = [
       info: {
          composition: [ 'Ou', 'Faina migdale', 'Fistic', 'Miere de albine', 'Unt', 'Lime' ],
          recommendation: '*Decor limitat',
-         price: 80
+         price: '80 ron/kg'
       }
    },
    {
@@ -51,7 +51,7 @@ export const cakesArray = [
       info: {
          composition: [ 'Ou', 'Faina', 'Lapte', 'Miere', 'Smantana', 'Visine', 'Portocale' ],
          recommendation: '*Decor limitat',
-         price: 80
+         price: '80 ron/kg'
       }
    },
    {
@@ -60,8 +60,8 @@ export const cakesArray = [
       info: {
          composition: [ 'Ou', 'Faina', 'Lapte', 'Morcov', 'Ghimbir', 'Nucsoara', 'Crema de' +
          ' branza', 'Unt' ],
-         recommendation: 'Recomandat pentru evenimente',
-         price: 80
+         recommendation: '*Recomandat pentru evenimente',
+         price: '80 ron/kg'
       }
    },
    {
@@ -70,8 +70,8 @@ export const cakesArray = [
       info: {
          composition: [ 'Biscuite cu unt', 'Crema de branza', 'Ciocolata alba', 'Piure de' +
          ' fructe', 'Gelatina' ],
-         recommendation: 'Recomandat pentru evenimente',
-         price: 90
+         recommendation: '*Recomandat pentru evenimente',
+         price: '90 ron/kg'
       }
    },
    {
@@ -79,8 +79,8 @@ export const cakesArray = [
       image: 'cake2.png',
       info: {
          composition: [ 'Biscuite cu migdale', 'Ciocolata', 'Crema de whisky', 'Ou', 'Mascarpone', 'Zahar' ],
-         recommendation: 'Recomandat pentru evenimente',
-         price: 90
+         recommendation: '*Recomandat pentru evenimente',
+         price: '90 ron/kg'
       }
    },
    {
@@ -88,8 +88,8 @@ export const cakesArray = [
       image: 'cake2.png',
       info: {
          composition: ['Albus ou', 'Zahar', 'Amidon', 'Mascarpone', 'Crema de branza', 'Smantana', 'Fructe'],
-         recommendation: 'Recomandat pentru evenimente',
-         price: 112
+         recommendation: '*Recomandat pentru evenimente',
+         price: '11 ron/kg'
       }
    },
    {
@@ -98,8 +98,8 @@ export const cakesArray = [
       info: {
          composition: [ 'Ou', 'Faina', 'Lapte', 'Morcov', 'Ghimbir', 'Nucsoara', 'Crema de' +
          ' branza', 'Unt' ],
-         recommendation: 'Recomandat pentru evenimente',
-         price: 80
+         recommendation: '*Recomandat pentru evenimente',
+         price: '80 ron/kg'
       }
    },
    {
@@ -108,8 +108,8 @@ export const cakesArray = [
       info: {
          composition: [ 'Ou', 'Faina', 'Lapte', 'Morcov', 'Ghimbir', 'Nucsoara', 'Crema de' +
          ' branza', 'Unt' ],
-         recommendation: 'Recomandat pentru evenimente',
-         price: 80
+         recommendation: '*Recomandat pentru evenimente',
+         price: '80 ron/kg'
       }
    },
    {
@@ -118,7 +118,7 @@ export const cakesArray = [
       info: {
          composition: ['Ou', 'Zahar', 'Faina', 'Unt', 'Ciocolata', 'Rom', 'Fondant'],
          recommendation: '*Decor limitat',
-         price: 70
+         price: '70 ron/kg'
       }
    },
    {
@@ -126,8 +126,8 @@ export const cakesArray = [
       image: 'cake2.png',
       info: {
          composition: [ 'Ou', 'Faina', 'Lapte', 'Cacao', 'Unt', 'Lamaie', 'Ciocolata' ],
-         recommendation: 'Recomandat pentru evenimente',
-         price: 60
+         recommendation: '*Recomandat pentru evenimente',
+         price: '60 ron/kg'
       }
    },
 ]
