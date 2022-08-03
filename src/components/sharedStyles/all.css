@@ -1659,7 +1659,7 @@ mark.orange {
     color: #FD794F;
   }
   .nav-bar__mobile__shop-name p {
-    margin: 0;
+    margin: 0 0 0 3rem;
     font-size: 1.1rem;
   }
   .nav-bar__mobile__dropdown {
@@ -1732,7 +1732,7 @@ mark.orange {
     color: #FD794F;
   }
   .nav-bar__mobile__shop-name p {
-    margin: 0;
+    margin: 0 0 0 3rem;
     font-size: 1.1rem;
   }
   .nav-bar__mobile__dropdown {
