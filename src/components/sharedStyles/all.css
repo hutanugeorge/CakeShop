@@ -691,7 +691,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 5rem;
+  gap: 10rem;
 }
 
 .mobile-info {
@@ -1452,7 +1452,7 @@ mark.orange {
   display: none;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 5rem;
   padding-bottom: 10rem;
 }
 .products-showcase__cakes__visible {
