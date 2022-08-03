@@ -57,17 +57,17 @@ export default () => {
   const products = [
       {
        name: Products.CAKES,
-       image: 'cake1.webp',
+       image: 'macarons.jpg',
        show: () => showProducts(Products.CAKES)
      },
      {
       name: Products.COOKIES,
-      image: 'cake1.webp',
+      image: 'cake2.png',
       show: () => showProducts(Products.COOKIES)
     },
      {
       name: Products.BAKERY,
-      image: 'cake1.webp',
+      image: 'index.jpg',
       show: () => showProducts(Products.BAKERY)
     },
      {
