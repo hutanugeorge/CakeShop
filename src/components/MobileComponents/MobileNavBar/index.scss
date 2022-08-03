@@ -18,9 +18,9 @@
     &__shop-name {
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       flex-direction: column;
-      min-width: 12rem;
+      min-width: 75%;
       height: 100%;
       margin: 0 0 0 1rem;
       font-size: 1.7rem;
