@@ -170,7 +170,7 @@
       height: 20rem;
       border: 1px solid black;
       border-radius: 0 0 2rem 2rem;
-      background-image: url('cake1.jpg');
+      background-image: url('/macarons.jpg');
       cursor: pointer;
       transition: .5s;
 
@@ -269,18 +269,23 @@
   .category-list {
     display: flex;
     padding-top: 4rem;
+    align-items: center;
     height: 100%;
     width: 100%;
     gap: 2rem;
     margin: 0;
 
     &__choosing {
-      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 80%;
 
 
       &__first-section {
         margin: auto;
-        width: 25rem;
+        width: 100%;
         height: 15rem;
 
         &__name {
@@ -292,11 +297,11 @@
 
       &__second-section {
         margin: auto;
-        width: 25rem;
+        width: 100%;
         height: 15rem;
 
         &__name {
-          font-size: 3rem;
+          font-size: 2.3rem;
           margin: 0 2rem;
 
         }

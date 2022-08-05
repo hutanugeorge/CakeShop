@@ -759,7 +759,7 @@
   height: 20rem;
   border: 1px solid black;
   border-radius: 0 0 2rem 2rem;
-  background-image: url("cake1.jpg");
+  background-image: url("/macarons.jpg");
   cursor: pointer;
   transition: 0.5s;
 }
@@ -834,17 +834,22 @@
   .category-list {
     display: flex;
     padding-top: 4rem;
+    align-items: center;
     height: 100%;
     width: 100%;
     gap: 2rem;
     margin: 0;
   }
   .category-list__choosing {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
   }
   .category-list__choosing__first-section {
     margin: auto;
-    width: 25rem;
+    width: 100%;
     height: 15rem;
   }
   .category-list__choosing__first-section__name {
@@ -853,11 +858,11 @@
   }
   .category-list__choosing__second-section {
     margin: auto;
-    width: 25rem;
+    width: 100%;
     height: 15rem;
   }
   .category-list__choosing__second-section__name {
-    font-size: 3rem;
+    font-size: 2.3rem;
     margin: 0 2rem;
   }
   .category-list:hover {
