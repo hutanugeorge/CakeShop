@@ -23,7 +23,7 @@
     transition: .3s;
     cursor: pointer;
     border-radius: 50%;
-    animation: slide_in .5s;
+    animation: slide_from_bottom .5s;
 
     &__category {
       display: flex;
@@ -73,14 +73,15 @@
       align-items: center;
       justify-content: center;
       padding-top: 2rem;
-      min-width: 25%;
-      width: 11rem;
+      min-width: 30%;
+      max-width: 12rem;
       min-height: 25%;
       height: 11rem;
 
       & img {
         border: 1px solid #FD794F;
         width: 100%;
+        max-width: 12rem;
         height: 100%;
       }
     }

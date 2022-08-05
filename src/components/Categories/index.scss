@@ -6,6 +6,7 @@
   width: 8rem;
   height: 20rem;
   justify-content: center;
+  margin: 0 3rem;
 
 
   &__container {
@@ -116,10 +117,96 @@
 
 .category-list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 2rem;
   gap: 10rem;
+
+  &__choosing {
+
+    &__first-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      filter: brightness(100%);
+      width: 70rem;
+      height: 20rem;
+      border: 1px solid black;
+      border-radius: 2rem 2rem 0 0;
+      background-image: url('/macarons.jpg');
+      cursor: pointer;
+
+
+      &__name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        transition: .5s;
+        background-color: white;
+        mix-blend-mode: screen;
+        font-size: 4rem;
+        font-weight: bold;
+        font-style: italic;
+      }
+
+      &:hover {
+        filter: brightness(80%);
+
+        .category-list__choosing__first-section__name {
+          transform: translateY(-1rem);
+        }
+      }
+    }
+
+    &__second-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      filter: brightness(100%);
+      width: 70rem;
+      height: 20rem;
+      border: 1px solid black;
+      border-radius: 0 0 2rem 2rem;
+      background-image: url('cake3.jpg');
+      cursor: pointer;
+      transition: .5s;
+
+      &__name {
+        display: flex;
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+        transition: .5s;
+        background-color: white;
+        mix-blend-mode: screen;
+        font-size: 4rem;
+        font-weight: bold;
+        font-style: italic;
+      }
+
+      &:hover {
+        filter: brightness(80%);
+
+        .category-list__choosing__second-section__name {
+          transform: translateY(-1rem);
+        }
+      }
+    }
+  }
+
+  &__products {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    padding-top: 7rem;
+    gap: 10rem;
+  }
 }
+
 
 .mobile-info {
   display: none;
@@ -166,9 +253,11 @@
             }
           }
         }
+
         &__type {
           display: flex;
           justify-content: center;
+          align-items: center;
           width: 100%;
           font-size: 1.4rem;
           margin: .5rem 0 0 0;
@@ -179,8 +268,55 @@
 
   .category-list {
     display: flex;
+    padding-top: 4rem;
     height: 100%;
-    gap: 3rem;
+    width: 100%;
+    gap: 2rem;
+    margin: 0;
+
+    &__choosing {
+
+
+      &__first-section {
+        margin: auto;
+        width: 25rem;
+        height: 15rem;
+
+        &__name {
+          font-size: 3rem;
+          margin: 0 2rem;
+
+        }
+      }
+
+      &__second-section {
+        margin: auto;
+        width: 25rem;
+        height: 15rem;
+
+        &__name {
+          font-size: 3rem;
+          margin: 0 2rem;
+
+        }
+      }
+    }
+
+    &:hover {
+      filter: none;
+
+      .category-list__choosing__second-section__name {
+        transform: none;
+      }
+    }
+
+    &__products {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      gap: 2rem;
+    }
   }
 
 

@@ -1,3 +1,6 @@
+@import '../../components/sharedStyles/utils/variables';
+@import '../../components/sharedStyles/utils/mixins';
+
 .scroll-up-button {
   position: fixed;
   display: none;
@@ -12,5 +15,17 @@
   & svg {
     color: #FD794F;
 
+  }
+}
+
+@include respond($tablet-portrait) {
+  .scroll-up-button {
+    left: 90%;
+  }
+}
+
+@include respond($phone) {
+  .scroll-up-button {
+    display: none;
   }
 }

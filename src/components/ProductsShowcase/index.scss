@@ -2,10 +2,13 @@
 @import '../../components/sharedStyles/utils/mixins';
 
 .products-showcase {
+  display: flex;
+  justify-content: center;
   min-height: 20rem;
   height: fit-content;
   padding-top: 6rem;
-  width: 100vw;
+  width: 90%;
+  margin: auto;
 
   &__cakes {
     display: none;
