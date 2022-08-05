@@ -759,7 +759,7 @@
   height: 20rem;
   border: 1px solid black;
   border-radius: 0 0 2rem 2rem;
-  background-image: url("cake3.jpg");
+  background-image: url("cake1.jpg");
   cursor: pointer;
   transition: 0.5s;
 }
@@ -838,6 +838,9 @@
     width: 100%;
     gap: 2rem;
     margin: 0;
+  }
+  .category-list__choosing {
+    width: 100%;
   }
   .category-list__choosing__first-section {
     margin: auto;
