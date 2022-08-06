@@ -53,7 +53,7 @@ export const cookiesArray = [
    {
       type: 'Paleuri',
       price: 50,
-      image: './index.jpg',
+      image: './paleuri.jpg',
       info: {
          price: '55 ron/kg',
          composition: [ 'Ou', 'Unt', 'Faina', 'Zahar', 'Ciocolata', 'Smantana' ],
@@ -114,7 +114,7 @@ export const cookiesArray = [
    {
       type: 'Choux cu craquelin',
       price: 50,
-      image: './index.jpg',
+      image: './chouxCraquelin.jpg',
       info: {
          price: '60 ron/kg',
          composition: [ 'Ou', 'Faina', 'Lapte', 'Unt', 'Vanilie' ],

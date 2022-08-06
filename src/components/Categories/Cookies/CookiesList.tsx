@@ -37,7 +37,7 @@ export default () => {
 
                  }}>
                <p className="category-list__choosing__second-section__name">
-                  Prajituri de post
+                  De post
                </p>
             </div>
          </div>

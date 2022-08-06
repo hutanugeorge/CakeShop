@@ -26,7 +26,7 @@ export default () => {
                     gotoElement(productsSection)
                  }}>
                <p className="category-list__choosing__first-section__name">
-                  Produse de panificatie
+                  Brutarie
                </p>
             </div>
             <div className="category-list__choosing__second-section"
@@ -37,7 +37,7 @@ export default () => {
 
                  }}>
                <p className="category-list__choosing__second-section__name">
-                  Produse de panificatie de post
+                  De post
                </p>
             </div>
          </div>

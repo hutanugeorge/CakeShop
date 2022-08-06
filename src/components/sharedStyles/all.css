@@ -823,6 +823,9 @@
     transform: none;
     filter: none;
   }
+  .category__container__primary-info__image__wrapper__card img {
+    object-fit: cover;
+  }
   .category__container__primary-info__type {
     display: flex;
     justify-content: center;
@@ -853,6 +856,7 @@
     height: 15rem;
   }
   .category-list__choosing__first-section__name {
+    width: 100%;
     font-size: 3rem;
     margin: 0 2rem;
   }
@@ -862,7 +866,8 @@
     height: 15rem;
   }
   .category-list__choosing__second-section__name {
-    font-size: 2.3rem;
+    width: 100%;
+    font-size: 3rem;
     margin: 0 2rem;
   }
   .category-list:hover {
