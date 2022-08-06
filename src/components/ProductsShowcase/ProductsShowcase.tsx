@@ -14,11 +14,11 @@ export default ({ showCakes, showCookies, showBakery, showIceCream, showCandyBar
          <CakesList/>
       </div>
       <div
-         className={`products-showcase__cookies ${showCookies ? 'products-showcase__cookies__visible' : ''}`}>
+         className={`products-showcase__cakes ${showCookies ? 'products-showcase__cakes__visible' : ''}`}>
          <CakesList/>
       </div>
       <div
-         className={`products-showcase__bakery ${showBakery ? 'products-showcase__bakery__visible' : ''}`}>
+         className={`products-showcase__cakes ${showBakery ? 'products-showcase__cakes__visible' : ''}`}>
          <CakesList/>
       </div>
       <div

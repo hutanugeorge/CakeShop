@@ -14,30 +14,6 @@
     display: none;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5rem;
-    padding-bottom: 10rem;
-
-    &__visible {
-      display: flex;
-    }
-  }
-
-  &__cookies {
-    display: none;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    padding-bottom: 10rem;
-
-    &__visible {
-      display: flex;
-    }
-  }
-
-  &__bakery {
-    display: none;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 2rem;
     padding-bottom: 10rem;
 
